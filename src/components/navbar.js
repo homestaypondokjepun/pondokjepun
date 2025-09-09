@@ -206,7 +206,11 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
+<<<<<<< HEAD
+                >
+=======
 
+>>>>>>> ca8bac5a077a95b1f2014edf3b672ff8621fca6d
                   <p
                     className={`text-coklat border-b-2 ${pathname === "/contact"
                       ? "border-b-coklat"

@@ -13,6 +13,7 @@ import Video from "@/components/video";
 export default function Home() {
   return (
     <>
+      {/* rhmansjkdvajsvh */}
       <Navbar />
       <Header />
       <Welcome />
