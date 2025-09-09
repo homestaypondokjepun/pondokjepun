@@ -4,7 +4,7 @@ const AccomodationHead = () => {
   return (
     <section className="h-[50vh] lg:h-[65vh] relative">
       <Image
-        src="/Accomodation/NDA_7465.jpg"
+        src="/fotoheader.jpg"
         fill
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "

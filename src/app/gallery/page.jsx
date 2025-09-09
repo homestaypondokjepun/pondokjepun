@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-import Contact from "@/components/contact"
+
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -19,7 +19,7 @@ export default function Gallery() {
     }, []);
 
     return <>
-        <Contact />
+
         <Navbar />
 
         <GalleryHead />
