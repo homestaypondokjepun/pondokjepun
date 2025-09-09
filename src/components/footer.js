@@ -8,13 +8,15 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center gap-1">
-              <Image
-                src="/logo.png"
-                className="h-8 me-1"
-                alt="FlowBite Logo"
-                height={50}
-                width={35}
-              />
+              <section className="w-11 h-11 flex justify-center items-center bg-white rounded-full">
+                <Image
+                  src="/logo.png"
+                  className="h-8 me-1"
+                  alt="FlowBite Logo"
+                  height={50}
+                  width={35}
+                />
+              </section>
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Jepun
               </span>
