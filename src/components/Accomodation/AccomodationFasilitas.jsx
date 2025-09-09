@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 const AccomodationFasilitas = () => {
 
     return (
-        <section className="w-full max-w-5xl mx-auto  mb-5  ">
+        <section className="w-full max-w-5xl mx-auto   ">
             <motion.section
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
