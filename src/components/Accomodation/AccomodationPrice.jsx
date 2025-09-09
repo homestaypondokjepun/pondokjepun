@@ -22,7 +22,7 @@ export default function AccomodationPrice() {
       {/* Cards list */}
       <section className="space-y-6 ">
         {/* Standard Room */}
-        <article className=" p-4 flex flex-col md:flex-row items-center bg-white shadow-sm">
+        <article className=" p-4 flex flex-col md:flex-row items-center bg-white shadow-sm rounded-md">
           <div className="md:w-2/3 p-4">
             <h3 className="text-lg  font-semibold tracking-wider">
               Harga Spesial All Access Homestay
@@ -35,7 +35,7 @@ export default function AccomodationPrice() {
                 <li className="p-1">Area Santai</li>
               </ul>
             </section>
-            <div className="mt-6 bg-[#b58d66] inline-block rounded px-4 py-2 text-white font-bold">
+            <div className="mt-6 bg-[#b58d66] inline-block rounded-md px-4 py-2 text-white font-bold">
               IDR 500.000 / Malam
             </div>
           </div>
