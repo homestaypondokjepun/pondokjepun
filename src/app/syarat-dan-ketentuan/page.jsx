@@ -52,7 +52,6 @@ export default function TermsAndConditions() {
               reservasi. Dengan melakukan pemesanan, Anda menyetujui seluruh
               ketentuan yang berlaku.
             </p>
-
             <ol className="space-y-6 text-gray-700">
               <li>
                 <h3 className="teramo text-coklat_tua font-semibold">
@@ -127,10 +126,6 @@ export default function TermsAndConditions() {
                 </p>
               </li>
             </ol>
-
-            <div className="mt-8 flex items-center gap-4">
-              <BtnTerm />
-            </div>
           </div>
 
           <aside className="w-72 hidden lg:block">
