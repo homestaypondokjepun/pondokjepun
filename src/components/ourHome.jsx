@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const images1 = [
   "/KamarDouble/NDA_7483.jpg",
@@ -40,10 +41,11 @@ const OurHome = () => {
   return (
     <section className=" bg-coklat_muda p-5">
       <section className="w-full p-3">
-        <section
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
           className="p-2 text-center"
-          data-aos="fade-up"
-          data-aos-easing="linear"
         >
           <h2 className="nicolas font-semibold text-coklat_tua text-4xl">
             Tempat yang nyaman untuk beristirahat, seperti di rumah sendiri.
@@ -52,24 +54,26 @@ const OurHome = () => {
             Rumah Kita
           </p>
           <hr className="m-auto w-40 h-1 rounded-2xl bg-coklat_tua text-coklat_tua" />
-        </section>
+        </motion.section>
       </section>
 
       <section>
         <section className="w-full sm:w-full lg:w-2/3 m-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-4 overflow-hidden">
           {/* CARD 1 */}
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
             className="bg-white rounded-md overflow-hidden"
-            data-aos="fade-right"
-            data-aos-easing="linear"
           >
             <section className="relative overflow-hidden">
               <div className="relative h-56 md:h-96">
                 {images1.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current1 ? "opacity-100" : "opacity-0"
-                      }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      index === current1 ? "opacity-100" : "opacity-0"
+                    }`}
                   >
                     <Image
                       src={src}
@@ -87,8 +91,9 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide1(index)}
-                    className={`w-3 h-3 rounded-full ${index === current1 ? "bg-white" : "bg-gray-400"
-                      }`}
+                    className={`w-3 h-3 rounded-full ${
+                      index === current1 ? "bg-white" : "bg-gray-400"
+                    }`}
                   ></button>
                 ))}
               </div>
@@ -150,20 +155,23 @@ const OurHome = () => {
                 Dilengkapi fasilitas dasar untuk kenyamanan Anda.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* CARD 2 */}
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
             className="bg-white  shadow-lg rounded-md overflow-hidden"
-            data-aos="fade-left"
           >
             <section className="relative overflow-hidden">
               <div className="relative h-56 md:h-96">
                 {images2.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current2 ? "opacity-100" : "opacity-0"
-                      }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      index === current2 ? "opacity-100" : "opacity-0"
+                    }`}
                   >
                     <Image
                       src={src}
@@ -181,8 +189,9 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide2(index)}
-                    className={`w-3 h-3 rounded-full ${index === current2 ? "bg-white" : "bg-gray-400"
-                      }`}
+                    className={`w-3 h-3 rounded-full ${
+                      index === current2 ? "bg-white" : "bg-gray-400"
+                    }`}
                   ></button>
                 ))}
               </div>
@@ -245,7 +254,7 @@ const OurHome = () => {
                 dan menyenangkan.
               </p>
             </div>
-          </div>
+          </motion.div>
         </section>
       </section>
     </section>

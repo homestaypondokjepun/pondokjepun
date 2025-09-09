@@ -1,11 +1,6 @@
-"use client";
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import "aos/dist/aos.css"; // Import CSS-nya
-import AOS from "aos";
-import { useEffect } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,12 +13,6 @@ const geistMono = Geist_Mono({
 });
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // durasi animasi
-      once: true, // animasi hanya sekali
-    });
-  }, []);
   return (
     <html lang="en">
       <head>

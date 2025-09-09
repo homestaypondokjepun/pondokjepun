@@ -1,12 +1,15 @@
 import Image from "next/image";
+import { motion } from "motion/react";
 
 const Fasilitas = () => {
   return (
     <section className="px-5 pt-18 pb-40 bg-coklat_muda">
       <section className="flex flex-col items-center">
-        <section
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
           className="flex flex-col items-center text-coklat_tua"
-          data-aos="fade-up"
         >
           <h2 className="text-[28px] md:text-[42px] nicolas font-bold tracking-wider">
             Fasilitas Unggulan
@@ -14,10 +17,12 @@ const Fasilitas = () => {
           <p className="font-bold text-[14px] md:text-[16px] teramo  mt-1">
             Semua Yang Anda Butuhkan Ada di Rumah
           </p>
-        </section>
-        <section
+        </motion.section>
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
           className="text-coklat_tua flex flex-wrap w-3/4 mt-5 justify-around items-center"
-          data-aos="fade-up"
         >
           <section className="w-72 mt-10 md:mt-20 text-center hover:scale-110 duration-150">
             <section className="mb-1">
@@ -122,7 +127,7 @@ const Fasilitas = () => {
               WiFi cepat dan stabil untuk mendukung aktivitas online tamu.
             </p>
           </section>
-        </section>
+        </motion.section>
       </section>
     </section>
   );

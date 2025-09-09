@@ -29,10 +29,8 @@ const RuangMakan = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 2, ease: "easeIn" }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "linear" }}
       className="p-1 md:p-4 flex items-center overflow-hidden bg-coklat_muda"
     >
       {/* Tampilan Desktop */}

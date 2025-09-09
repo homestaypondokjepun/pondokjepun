@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "motion/react";
 
 const VideoHero = () => {
   useEffect(() => {
@@ -34,7 +35,12 @@ const VideoHero = () => {
   }, []);
 
   return (
-    <section className="p-5 flex justify-center" data-aos="fade-up">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "linear" }}
+      className="p-5 flex justify-center"
+    >
       <section className="w-full max-w-6xl rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
         {/* Teks di atas video */}
         <div className="text-center p-6">
@@ -58,7 +64,7 @@ const VideoHero = () => {
           ></div>
         </div>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

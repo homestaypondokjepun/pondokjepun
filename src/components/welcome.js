@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const Welcome = () => {
   return (
     <section className="mb-2 md:mb-2 lg:mb-32">
       <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0 ">
         <section className="w-full flex justify-end py-10 md:py-0">
-          <section
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            // data-aos-duration="1500"
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
             className="relative hidden md:block w-full h-[40rem] -top-10 "
           >
             <Image
@@ -19,46 +20,57 @@ const Welcome = () => {
               className="object-cover object-center rounded-md"
             />
 
-            <Image
-              src="/LandingPage/NDA_7482.jpg"
-              width={300}
-              height={500}
-              alt="Living room"
-              className="absolute -bottom-[9.5rem] right-0 h-[18rem] object-cover rounded-l-md rounded-br-md"
-              data-aos-easing="linear"
-              data-aos="fade-up"
-            />
-          </section>
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: "linear" }}
+              className="absolute -bottom-[9.5rem] right-0"
+            >
+              <Image
+                src="/LandingPage/NDA_7482.jpg"
+                width={300}
+                height={500}
+                alt="Living room"
+                className="h-[18rem] object-cover rounded-l-md rounded-br-md"
+              />
+            </motion.section>
+          </motion.section>
 
           <section className="flex flex-wrap gap-5 md:hidden overflow-hidden">
-            <Image
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              // data-aos-duration="1500"
-              src="/LandingPage/NDA_7417.jpg"
-              width={800} // ubah sesuai kebutuhan
-              height={800} // ubah sesuai kebutuhan
-              alt="Living room"
-              className="m-auto rounded-md"
-            />
-            <Image
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              // data-aos-duration="2000"
-              src="/LandingPage/NDA_7482.jpg"
-              width={800} // ubah sesuai kebutuhan
-              height={800} // ubah sesuai kebutuhan
-              alt="Living room"
-              className="m-auto rounded-md"
-            />
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: "linear" }}
+            >
+              <Image
+                src="/LandingPage/NDA_7417.jpg"
+                width={800} // ubah sesuai kebutuhan
+                height={800} // ubah sesuai kebutuhan
+                alt="Living room"
+                className="m-auto rounded-md"
+              />
+            </motion.section>
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, ease: "linear" }}
+            >
+              <Image
+                src="/LandingPage/NDA_7482.jpg"
+                width={800} // ubah sesuai kebutuhan
+                height={800} // ubah sesuai kebutuhan
+                alt="Living room"
+                className="m-auto rounded-md"
+              />
+            </motion.section>
           </section>
         </section>
 
         <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r- overflow-hidden">
-          <section
-            data-aos="fade-left"
-            data-aos-easing="linear"
-          // data-aos-duration="1500"
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
           >
             <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">
               Selamat Datang
@@ -66,11 +78,11 @@ const Welcome = () => {
             <p className="teramo font-medium tracking-wider md:text-[18px] text-[14px] mt-4 text-coklat_tua ">
               Tentang Kami
             </p>
-          </section>
-          <section
-            data-aos="fade-left"
-            data-aos-easing="linear"
-            // data-aos-duration="1500"
+          </motion.section>
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
             className="mt-5"
           >
             <p className="teramo font-medium md:text-[16px] text-[14px] leading-7 text-coklat_tua">
@@ -131,7 +143,7 @@ const Welcome = () => {
                 />
               </svg>
             </Link>
-          </section>
+          </motion.section>
         </section>
       </section>
     </section>

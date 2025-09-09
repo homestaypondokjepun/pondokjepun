@@ -33,18 +33,11 @@ const RuangTamu = () => {
 
         <motion.section
           className="p-6 flex-col content-center hidden md:block pl-30 pr-10"
-          initial={{ opacity: 0 }}            // kondisi awal
-          whileInView={{ opacity: 1, y: 0 }}         // saat terlihat
-          exit={{ opacity: 0 }}               // saat keluar
-          viewport={{ once: false, amount: 0.3 }}    // ulangi setiap masuk viewport
-          transition={{ duration: 2, ease: "easeIn" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
-          <section
-            className="p-6 flex-col content-center hidden md:block pl-30 pr-10 "
-
-
-
-          >
+          <section className="p-6 flex-col content-center hidden md:block pl-30 pr-10 ">
             <h5
               className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
             >
@@ -62,8 +55,8 @@ const RuangTamu = () => {
               <p className="mt-4 text-sm md:text-base leading-relaxed">
                 Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
                 berbincang, atau sekadar menikmati suasana homestay yang hangat.
-                Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah
-                sendiri.
+                Dirancang dengan sentuhan homey agar Anda merasa seperti di
+                rumah sendiri.
               </p>
 
               <Link
@@ -94,26 +87,22 @@ const RuangTamu = () => {
           </section>
         </motion.section>
 
-
         {/* Left Section (Carousel) */}
         <motion.section
           className="relative overflow-hidden content-center hidden md:block"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 2, ease: "easeIn" }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
-          <section
-            className="relative  overflow-hidden content-center hidden md:block "
-          >
+          <section className="relative  overflow-hidden content-center hidden md:block ">
             {/* Wrapper */}
             <div className="relative aspect-video md:aspect-full md:h-full">
               {images.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
-                    }`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    index === current ? "opacity-100" : "opacity-0"
+                  }`}
                 >
                   <Image
                     src={src}
@@ -131,8 +120,9 @@ const RuangTamu = () => {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
-                    }`}
+                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
+                    index === current ? "bg-white" : "bg-gray-400"
+                  }`}
                 ></button>
               ))}
             </div>
@@ -184,9 +174,7 @@ const RuangTamu = () => {
             </button>
           </section>
         </motion.section>
-
       </section>
-
 
       {/* Tampilan Mobile */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:hidden ">
@@ -194,21 +182,18 @@ const RuangTamu = () => {
         <motion.section
           className="p-1 flex-col content-center block md:block"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 2, ease: "easeIn" }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
-          <section
-            className="relative overflow-hidden"
-          >
+          <section className="relative overflow-hidden">
             {/* Wrapper */}
             <div className="relative aspect-video md:aspect-full md:h-full">
               {images.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
-                    }`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    index === current ? "opacity-100" : "opacity-0"
+                  }`}
                 >
                   <Image
                     src={src}
@@ -226,8 +211,9 @@ const RuangTamu = () => {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
-                    }`}
+                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
+                    index === current ? "bg-white" : "bg-gray-400"
+                  }`}
                 ></button>
               ))}
             </div>
@@ -280,16 +266,13 @@ const RuangTamu = () => {
           </section>
         </motion.section>
 
-
         {/* Left Section (Text) */}
 
         <motion.section
           className="p-1 flex-col content-center block md:block"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          viewport={{ once: false, amount: 0.5 }}
-          transition={{ duration: 2, ease: "easeIn" }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
         >
           <section
             className="p-6 flex flex-col justify-center "
@@ -312,8 +295,8 @@ const RuangTamu = () => {
               <p className="mt-4 text-sm md:text-base leading-relaxed">
                 Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
                 berbincang, atau sekadar menikmati suasana homestay yang hangat.
-                Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah
-                sendiri.
+                Dirancang dengan sentuhan homey agar Anda merasa seperti di
+                rumah sendiri.
               </p>
 
               <Link
@@ -343,9 +326,6 @@ const RuangTamu = () => {
             </section>
           </section>
         </motion.section>
-
-
-
       </section>
     </section>
   );
