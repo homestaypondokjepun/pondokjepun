@@ -1,3 +1,4 @@
+import BtnTerm from "@/components/term/BtnTerm";
 import Link from "next/link";
 
 export const metadata = {
@@ -128,12 +129,13 @@ export default function TermsAndConditions() {
             </ol>
 
             <div className="mt-8 flex items-center gap-4">
-              <Link
+              {/* <Link
                 href={"/"}
                 className="px-4 py-2 bg-coklat text-white rounded-md text-sm hover:bg-coklat_tua"
               >
                 Kembali
-              </Link>
+              </Link> */}
+              <BtnTerm />
             </div>
           </div>
 

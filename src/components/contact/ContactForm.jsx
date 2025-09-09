@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const ContactForm = () => {
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
   const [pesan, setPesan] = useState("");
+  const pathname = usePathname();
 
   const sendWhatsapp = (e) => {
     e.preventDefault();
@@ -187,10 +189,12 @@ const ContactForm = () => {
               </button>
 
               <Link
-                href={"/syarat-dan-ketentuan"}
+                href={`/syarat-dan-ketentuan?from=${encodeURIComponent(
+                  pathname
+                )}`}
                 className="text-coklat_tua underline"
               >
-                Syarat &amp; Ketentuan{" "}
+                Syarat &amp; Ketentuan
               </Link>
             </section>
           </form>
