@@ -60,7 +60,7 @@ export default function Navbar() {
 
           <section className="items-center gap-10 hidden sm:flex ">
             <p className="text-2xl text-coklat font-bold">+(84) 4130 0555</p>
-            <button className="py-2 px-5 font-bold bg-coklat rounded text-coklat_muda cursor-pointer hover:bg-coklat_tua">
+            <button className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua">
               Hubungi Kami
             </button>
           </section>

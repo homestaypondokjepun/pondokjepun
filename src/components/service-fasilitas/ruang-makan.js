@@ -40,7 +40,7 @@ const RuangMakan = () => {
         {/* Left Section (Carousel) */}
         <section className="relative  overflow-hidden content-center hidden md:block ">
           {/* Wrapper */}
-          <div className="relative aspect-video md:aspect-full md:h-full">
+          <div className="relative aspect-video md:aspect-full md:h-full ">
             {images.map((src, index) => (
               <div
                 key={index}
@@ -52,7 +52,7 @@ const RuangMakan = () => {
                   src={src}
                   alt={`Slide ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-md"
                 />
               </div>
             ))}
@@ -144,7 +144,7 @@ const RuangMakan = () => {
               href={"/contact"}
               type="button"
               className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
-                focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+                focus:outline-none focus:ring-blue-300 font-medium rounded-md 
                 text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
             >
               Pilih Rencana
@@ -184,7 +184,7 @@ const RuangMakan = () => {
                   src={src}
                   alt={`Slide ${index + 1}`}
                   fill
-                  className="object-cover"
+                  className="object-cover rounded-md"
                 />
               </div>
             ))}
@@ -275,7 +275,7 @@ const RuangMakan = () => {
               href={"/contact"}
               type="button"
               className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
-                focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
+                focus:outline-none focus:ring-blue-300 font-medium rounded-md 
                 text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
             >
               Pilih Rencana

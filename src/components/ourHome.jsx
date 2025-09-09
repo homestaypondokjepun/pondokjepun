@@ -64,7 +64,7 @@ const OurHome = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "linear" }}
-            className="bg-white rounded-md overflow-hidden"
+            className="bg-white rounded-md overflow-hidden shadow-md"
           >
             <section className="relative overflow-hidden">
               <div className="relative h-56 md:h-96">
@@ -162,7 +162,7 @@ const OurHome = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "linear" }}
-            className="bg-white  shadow-lg rounded-md overflow-hidden"
+            className="bg-white shadow-md rounded-md overflow-hidden"
           >
             <section className="relative overflow-hidden">
               <div className="relative h-56 md:h-96">
