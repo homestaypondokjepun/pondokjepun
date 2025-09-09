@@ -121,6 +121,7 @@ export default function Navbar() {
           <div
             className={`w-full md:block md:w-auto ${showHide ? "" : "hidden"}`}
           >
+
             <ul
               ref={ulMenu}
               className="font-medium flex flex-col p-4 md:p-0 mt-4   rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-coklat_muda"
@@ -205,7 +206,11 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
+<<<<<<< HEAD
                 >
+=======
+
+>>>>>>> ca8bac5a077a95b1f2014edf3b672ff8621fca6d
                   <p
                     className={`text-coklat border-b-2 ${pathname === "/contact"
                       ? "border-b-coklat"

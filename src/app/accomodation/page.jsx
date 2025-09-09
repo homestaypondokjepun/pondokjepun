@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect } from "react";
@@ -5,6 +6,7 @@ import { useEffect } from "react";
 
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+
 
 import AccomodationHead from "@/components/Accomodation/AccomodationHead";
 import AccomodationPreview from "@/components/Accomodation/AccomodationPreview";
@@ -51,6 +53,7 @@ export const metadata = {
 };
 
 export default function Akomodasi() {
+
     useEffect(() => {
         document.title = "Accomodation";
     }, []);
@@ -64,6 +67,7 @@ export default function Akomodasi() {
             <AccomodationFasilitasKamar />
             <AccomodationFasilitas />
             <Footer />
+
         </>
     );
 }
