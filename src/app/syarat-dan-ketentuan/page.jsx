@@ -129,12 +129,6 @@ export default function TermsAndConditions() {
             </ol>
 
             <div className="mt-8 flex items-center gap-4">
-              {/* <Link
-                href={"/"}
-                className="px-4 py-2 bg-coklat text-white rounded-md text-sm hover:bg-coklat_tua"
-              >
-                Kembali
-              </Link> */}
               <BtnTerm />
             </div>
           </div>
