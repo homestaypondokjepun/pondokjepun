@@ -1,9 +1,4 @@
 
-"use client";
-
-import { useEffect } from "react";
-
-
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -50,10 +45,6 @@ export const metadata = {
 
 export default function Kontak() {
 
-
-    useEffect(() => {
-        document.title = "Contact Us";
-    }, []);
 
     return (
         <>

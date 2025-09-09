@@ -1,15 +1,16 @@
+"use client";
 import { motion } from "motion/react";
 
 const AccomodationFasilitas = () => {
     return (
-        <section className="w-full max-w-5xl mx-auto ">
+        <section className="w-full max-w-5xl mx-auto  mb-5  ">
             <motion.section
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, ease: "linear" }}
                 className=" text-center p-5"
             >
-                <h2 className="nicolas font-semibold text-coklat_tua text-4xl pb-5">
+                <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] pb-4">
                     Fasilitas Lainnya
                 </h2>
 
@@ -17,11 +18,17 @@ const AccomodationFasilitas = () => {
             </motion.section>
 
 
-            <section className="p-2   flex justify-center md:ml-20 md:mr-20 ">
-                <ul className="w-full  list-disc list-inside  ">
-                    <section className="grid grid-cols-2 gap-3 md:grid-cols-3  w-full p-2 teramo md:text-[16px] font-normal text-[14px] text-coklat_tua ">
+            <section className=" flex justify-center md:ml-20 md:mr-20 ">
+                <ul className="w-full  list-disc  ">
+                    <section className="grid grid-cols-2 gap-3 md:grid-cols-3  w-full pl-15 pr-10 m-auto teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua ">
                         <li className="md:p-1 p-0">
                             Free Air Mineral
+                        </li>
+                        <li className="md:p-1 p-0">
+                            Free Mie Instan 2
+                        </li>
+                        <li className="md:p-1 p-0">
+                            Free Kopi, Teh Sachet
                         </li>
                         <li className="md:p-1 p-0">
                             Free Sandal

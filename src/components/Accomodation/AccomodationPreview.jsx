@@ -28,21 +28,19 @@ export default function AccomodationPreview() {
     const swiperRef = useRef(null);
 
     return (
-        <div className="p-5">
-            <div className="w-full max-w-5xl mx-auto">
-                {/* <section className="p-2 font-bold teramo text-2xl ">
-                    <h1 className="pb-5">Preview Lokasi</h1>
-                </section> */}
+        <div className="p-5 ">
+            <div className="w-full max-w-5xl mx-auto " >
+
                 <motion.section
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8, ease: "linear" }}
                     className=" text-center p-5"
                 >
-                    <h2 className="nicolas font-semibold text-coklat_tua text-4xl pb-5">
-                        Preview Tempat
+                    <h2 className="teramo font-semibold text-coklat_tua text-[20px] md:text-[26px] pb-4">
+                        Foto Homestay Pondok Jepun
                     </h2>
-                    <hr className="m-auto w-[95%] rounded-2xl bg-coklat_tua text-coklat_tua " />
+                    <hr className="m-auto w-[55%] rounded-2xl bg-coklat_tua text-coklat_tua " />
                 </motion.section>
 
                 {/* Main Slider */}
@@ -107,7 +105,7 @@ export default function AccomodationPreview() {
                     slidesPerView={6}
                     spaceBetween={10}
                     watchSlidesProgress
-                    className="cursor-pointer mb-10 md:mb-8 "
+                    className="cursor-pointer mb-5 "
                 >
                     {images.map((src, i) => (
                         <SwiperSlide key={i}>

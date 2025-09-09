@@ -1,6 +1,4 @@
 
-"use client";
-
 import Header from "@/components/header"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -48,8 +46,6 @@ export const metadata = {
 };
 
 export default function Service_Fasilitas() {
-
-
     return (
         <>
 

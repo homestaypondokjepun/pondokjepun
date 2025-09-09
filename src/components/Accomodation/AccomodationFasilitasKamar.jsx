@@ -39,7 +39,7 @@ const AccomodationFasilitasKamar = () => {
     const goToSlide2 = (index) => setCurrent2(index);
     return (
         <div className="">
-            <div className="w-full max-w-5xl mx-auto mb-8  ">
+            <div className="w-full max-w-5xl mx-auto  mb-5 ">
 
                 <motion.section
                     initial={{ opacity: 0 }}
@@ -47,11 +47,11 @@ const AccomodationFasilitasKamar = () => {
                     transition={{ duration: 0.8, ease: "linear" }}
                     className=" text-center p-5"
                 >
-                    <h2 className="nicolas font-semibold text-coklat_tua text-4xl pb-5">
+                    <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] pb-4">
                         Fasilitas Kamar
                     </h2>
 
-                    <hr className="m-auto w-[95%] rounded-2xl bg-coklat_tua text-coklat_tua" />
+                    <hr className="m-auto w-[55%] rounded-2xl bg-coklat_tua text-coklat_tua" />
                 </motion.section>
 
                 <section>
@@ -140,13 +140,13 @@ const AccomodationFasilitasKamar = () => {
                             </section>
 
                             <div className="p-5">
-                                <h5 className="mb-2 text-[24px] md:text-[32px] font-bold nicolas tracking-tight text-coklat_tua">
+                                <h5 className="teramo font-semibold text-coklat_tua text-[20px] md:text-[26px] pb-4">
                                     Standard Double Bed
                                 </h5>
                                 <hr className="text-coklat_tua" />
-                                <section className="p-2 teramo md:text-[16px] font-normal text-[14px] text-coklat_tua">
-                                    <ul className=" list-disc list-inside ">
-                                        <section className="grid grid-cols-2">
+                                <section className="p-4 teramo md:text-[16px] text-[14px]  text-coklat_tua">
+                                    <ul className=" list-disc  teramo font-semibold ">
+                                        <section className="grid grid-cols-2 gap-2">
 
                                             <li className="p-1">
                                                 Kasur Double Bed
@@ -155,7 +155,7 @@ const AccomodationFasilitasKamar = () => {
                                                 Kamar Mandi
                                             </li>
                                             <li className="p-1">
-                                                AC (Air Conditioner)
+                                                AC
                                             </li>
                                             <li className="p-1">
                                                 Water Heater
@@ -263,12 +263,12 @@ const AccomodationFasilitasKamar = () => {
                             </section>
 
                             <div className="p-5">
-                                <h5 className="mb-2 text-[24px] md:text-[32px] font-bold nicolas tracking-tight text-coklat_tua">
+                                <h5 className="teramo font-semibold text-coklat_tua text-[20px] md:text-[26px] pb-4">
                                     Standard Single Bed
                                 </h5>
                                 <hr className="text-coklat_tua" />
-                                <section className="p-2 teramo md:text-[16px] font-normal text-[14px] text-coklat_tua">
-                                    <ul className="max-w-md space-y-1  list-disc list-inside ">
+                                <section className="p-4  teramo md:text-[16px] font-normal text-[14px] text-coklat_tua">
+                                    <ul className="max-w-md space-y-1  list-disc teramo font-semibold ">
                                         <li className="p-1">
                                             Kasur Single Bed
                                         </li>

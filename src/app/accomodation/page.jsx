@@ -1,11 +1,10 @@
 
-"use client";
 
-import { useEffect } from "react";
 
 
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import ButtonChat from "@/components/buttonChat";
 
 
 import AccomodationHead from "@/components/Accomodation/AccomodationHead";
@@ -53,11 +52,6 @@ export const metadata = {
 };
 
 export default function Akomodasi() {
-
-    useEffect(() => {
-        document.title = "Accomodation";
-    }, []);
-
     return (
         <>
             <Navbar />
@@ -67,6 +61,7 @@ export default function Akomodasi() {
             <AccomodationFasilitasKamar />
             <AccomodationFasilitas />
             <Footer />
+            <ButtonChat />
 
         </>
     );

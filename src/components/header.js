@@ -6,16 +6,16 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <section className="h-[40vh] md:h-[65vh] relative">
+    <section className="h-[40vh] md:h-[55vh] relative">
       <Image
-        src="/LandingPage/NDA_7431.jpg"
+        src="/fotoheader.jpg"
         fill
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
       />
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-46">
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

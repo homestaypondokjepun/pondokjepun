@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-coklat">
+    <footer className="bg-coklat_muda">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -15,17 +15,17 @@ const Footer = () => {
                 height={50}
                 width={35}
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap ">
                 Jepun
               </span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 TENTANG KAMI
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <Link href="/service-fasilitas" className="hover:underline">
                     Layanan
@@ -42,10 +42,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 IKUTI KAMI
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <a
                     href="https://www.instagram.com/pondok_jepun25"
@@ -66,10 +66,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 Legal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     Privacy Policy
@@ -84,31 +84,31 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-coklat_muda sm:mx-auto lg:my-8" />
+        <hr className="my-6 text-coklat_tua border-coklat_tua sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-coklat_muda sm:text-center ">
-            © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </a>
+          <span className="text-sm text-coklat_tua sm:text-center hover:underline ">
+            © 2025{" "}
+            <Link href="/" >
+              Pondok Jepun™
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-4">
             <a
               href="https://www.instagram.com/pondok_jepun25"
               target="_blank"
-              className="text-coklat_muda hover:text-white"
+              className="text-coklat_tua hover:text-coklat_tua"
             >
               <i className="fa-brands fa-instagram text-xl"></i>
               <span className="sr-only">Instagram page</span>
             </a>
 
-            <a href="#" className="text-coklat_muda hover:text-white">
+            <a href="#" className="text-coklat_tua hover:text-coklat_tua">
               <i className="fa-brands fa-x-twitter text-xl"></i>
               <span className="sr-only">Twitter page</span>
             </a>
 
-            <a href="#" className="text-coklat_muda hover:text-white">
+            <a href="#" className="text-coklat_tua hover:text-coklat_tua">
               <i className="fa-brands fa-whatsapp text-xl"></i>
               <span className="sr-only">Whatsapp page</span>
             </a>
