@@ -1,5 +1,8 @@
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 
 import ContactHead from "@/components/contact/ContactHead";
 import ContactForm from "@/components/contact/ContactForm";
@@ -43,13 +46,17 @@ export const metadata = {
 };
 
 export default function Kontak() {
-  return (
-    <>
-      <Navbar />
-      <ContactHead />
-      <ContactForm />
-      <ContactMaps />
-      <Footer />
-    </>
-  );
+
+
+    return (
+        <>
+            <Navbar />
+            <ContactHead />
+            <ContactForm />
+            <ContactMaps />
+            <Footer />
+
+        </>
+    );
+
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const AccomodationHead = () => {
   return (
-    <section className="h-[50vh] lg:h-[65vh] relative">
+    <section className="h-[40vh] md:h-[55vh] relative">
       <Image
         src="/fotoheader.jpg"
         fill
@@ -14,7 +14,7 @@ const AccomodationHead = () => {
         data-aos="fade-up"
         data-aos-easing="linear"
         // data-aos-duration="1500"
-        className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56"
+        className="px-4 mx-auto max-w-screen-xl text-center py-20 lg:py-48"
       >
         <h1 className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-white   drop-shadow-lg">
           Accomodation

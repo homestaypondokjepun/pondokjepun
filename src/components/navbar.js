@@ -48,7 +48,7 @@ export default function Navbar() {
             </section>
           </section>
 
-          <section className=" h-18 mr-15  ">
+          <section className=" h-15 p-2 mr-12  ">
             <Image
               src="/logo.png"
               alt="logo"
@@ -59,8 +59,10 @@ export default function Navbar() {
           </section>
 
           <section className="items-center gap-10 hidden sm:flex ">
-            <p className="text-2xl text-coklat font-bold">+(84) 4130 0555</p>
-            <button className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua">
+
+            <p className="text-2xl text-coklat font-bold">+62 821-3248-7131</p>
+            <button className="py-2 px-5 font-bold bg-coklat rounded text-coklat_muda cursor-pointer hover:bg-coklat_tua">
+
               Hubungi Kami
             </button>
           </section>
@@ -68,19 +70,18 @@ export default function Navbar() {
       </section>
 
       <motion.nav
-        initial={{ opacity: 0, y: -50 }}
-        animate={scrolled ? { opacity: 1, y: 0 } : { opacity: 0.9, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
-        className={`z-50 w-full ${
-          scrolled
-            ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
-            : "relative bg-white md:bg-coklat_muda"
-        }`}
+
+
+        className={`z-50 w-full ${scrolled
+          ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
+          : "relative bg-white md:bg-coklat_muda"
+          }`}
+
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center ">
           <Link
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse md:hidden gap-2"
+            className="flex items-center space-x-3 rtl:space-x-reverse md:hidden gap-2 "
           >
             <Image
               src="/logo.png"
@@ -154,7 +155,7 @@ export default function Navbar() {
                         : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                   >
-                    Accomodation
+                    Akomodasi
                   </p>
                 </Link>
               </li>
@@ -170,7 +171,7 @@ export default function Navbar() {
                         : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
                   >
-                    Facilities
+                    Fasilitas
                   </p>
                 </Link>
               </li>
@@ -210,6 +211,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
+
                 >
                   <p
                     className={`text-coklat border-b-2 ${

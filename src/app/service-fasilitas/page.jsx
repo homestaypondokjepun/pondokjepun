@@ -1,6 +1,9 @@
-import Header from "@/components/header";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+
+import Header from "@/components/header"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import MejaMakan from "@/components/service-fasilitas/ruang-makan";
@@ -45,14 +48,18 @@ export const metadata = {
 };
 
 export default function Service_Fasilitas() {
-  return (
-    <>
-      <Navbar />
-      <Header />
-      <RuangTamu />
-      <MejaMakan />
-      <RuangKaraoke />
-      <Footer />
-    </>
-  );
+
+    return (
+        <>
+
+            <Navbar />
+            <Header />
+            <RuangTamu />
+            <MejaMakan />
+            <RuangKaraoke />
+            <Footer />
+
+        </>
+    );
+
 }

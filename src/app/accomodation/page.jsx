@@ -1,5 +1,12 @@
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+
+
+
+
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+import ButtonChat from "@/components/buttonChat";
+
 
 import AccomodationHead from "@/components/Accomodation/AccomodationHead";
 import AccomodationPreview from "@/components/Accomodation/AccomodationPreview";
@@ -46,15 +53,17 @@ export const metadata = {
 };
 
 export default function Akomodasi() {
-  return (
-    <>
-      <Navbar />
-      <AccomodationHead />
-      <AccomodationPreview />
-      <AccomodationPrice />
-      <AccomodationFasilitasKamar />
-      <AccomodationFasilitas />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar />
+            <AccomodationHead />
+            <AccomodationPreview />
+            <AccomodationPrice />
+            <AccomodationFasilitasKamar />
+            <AccomodationFasilitas />
+            <Footer />
+            <ButtonChat />
+
+        </>
+    );
 }

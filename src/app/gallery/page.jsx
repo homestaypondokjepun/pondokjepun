@@ -1,5 +1,8 @@
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 
 import GalleryHead from "@/components/Gallery/GalleryHead";
 import GalleryFoto from "@/components/Gallery/GalleryFoto";
@@ -42,11 +45,13 @@ export const metadata = {
 };
 
 export default function Gallery() {
-  return (
-    <>
-      <Navbar />
+    return (
+        <>
 
-      <GalleryHead />
+            <Navbar />
+
+            <GalleryHead />
+
 
       <GalleryFoto />
       <Footer />
