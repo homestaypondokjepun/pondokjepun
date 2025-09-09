@@ -1,6 +1,12 @@
-import Contact from "@/components/contact";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+
+"use client";
+
+import { useEffect } from "react";
+
+
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+
 
 import GalleryHead from "@/components/Gallery/GalleryHead";
 import GalleryFoto from "@/components/Gallery/GalleryFoto";
@@ -43,13 +49,20 @@ export const metadata = {
 };
 
 export default function Gallery() {
-  return (
-    <>
-      <Contact />
-      <Navbar />
-      <GalleryHead />
-      <GalleryFoto />
-      <Footer />
-    </>
+
+    useEffect(() => {
+        document.title = "Gallery";
+    }, []);
+
+    return <>
+
+        <Navbar />
+
+        <GalleryHead />
+
+        <GalleryFoto />
+
+        <Footer />
+
   );
 }

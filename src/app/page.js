@@ -1,5 +1,4 @@
 "use client";
-import Contact from "@/components/contact";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -14,7 +13,6 @@ import Video from "@/components/video";
 export default function Home() {
   return (
     <>
-      <Contact />
       <Navbar />
       <Header />
       <Welcome />

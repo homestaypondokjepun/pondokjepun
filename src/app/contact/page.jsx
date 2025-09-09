@@ -1,6 +1,13 @@
-import Contact from "@/components/contact";
+
+"use client";
+
+import { useEffect } from "react";
+
+
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+
 
 import ContactHead from "@/components/contact/ContactHead";
 import ContactForm from "@/components/contact/ContactForm";
@@ -44,14 +51,19 @@ export const metadata = {
 };
 
 export default function Kontak() {
-  return (
-    <>
-      <Contact />
-      <Navbar />
-      <ContactHead />
-      <ContactForm />
-      <ContactMaps />
-      <Footer />
+
+    useEffect(() => {
+        document.title = "Contact Us";
+    }, []);
+
+    return <>
+
+        <Navbar />
+        <ContactHead />
+        <ContactForm />
+        <ContactMaps />
+        <Footer />
+
     </>
   );
 }
