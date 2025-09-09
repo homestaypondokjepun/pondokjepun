@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center gap-1">
+
               <Image
                 src="/logo.png"
                 className="h-8 me-1"
@@ -16,6 +17,7 @@ const Footer = () => {
                 width={35}
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+
                 Jepun
               </span>
             </Link>
@@ -55,14 +57,6 @@ const Footer = () => {
                     Instagram
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    X
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
@@ -72,13 +66,16 @@ const Footer = () => {
               <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    Kebijakan Privasi
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
-                  </a>
+                  <Link
+                    href="/syarat-dan-ketentuan"
+                    className="hover:underline"
+                  >
+                    Syarat &amp; Ketentuan
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -86,10 +83,12 @@ const Footer = () => {
         </div>
         <hr className="my-6 text-coklat_tua border-coklat_tua sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
+
           <span className="text-sm text-coklat_tua sm:text-center hover:underline ">
             © 2025{" "}
             <Link href="/" >
               Pondok Jepun™
+
             </Link>
             . All Rights Reserved.
           </span>
@@ -103,12 +102,14 @@ const Footer = () => {
               <span className="sr-only">Instagram page</span>
             </a>
 
+
             <a href="#" className="text-coklat_tua hover:text-coklat_tua">
               <i className="fa-brands fa-x-twitter text-xl"></i>
               <span className="sr-only">Twitter page</span>
             </a>
 
             <a href="#" className="text-coklat_tua hover:text-coklat_tua">
+
               <i className="fa-brands fa-whatsapp text-xl"></i>
               <span className="sr-only">Whatsapp page</span>
             </a>

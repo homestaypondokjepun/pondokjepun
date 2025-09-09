@@ -135,7 +135,7 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="base-input"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-300 focus:border-gray-300 w-full p-2.5 "
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-gray-300 focus:border-gray-300 w-full p-2.5 rounded-md"
                 placeholder="Nama Anda"
                 onChange={(e) => setNama(e.target.value)}
                 required
@@ -159,7 +159,7 @@ const ContactForm = () => {
                 <input
                   type="email"
                   id="email-address-icon"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  "
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  rounded-md"
                   placeholder="Email Anda"
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -167,28 +167,31 @@ const ContactForm = () => {
               </section>
             </section>
 
-            <section className="  p-4">
+            <section className="p-4">
               <textarea
                 id="message"
                 rows="10"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-md"
                 placeholder="Pesan Anda"
                 onChange={(e) => setPesan(e.target.value)}
                 required
               ></textarea>
             </section>
 
-            <section
-              className="  p-4
-                        "
-            >
+            <section className="p-4 flex items-center gap-4">
               <button
                 type="submit"
-                className=" text-coklat cursor-pointer bg-coklat_muda  hover:bg-coklat hover:text-white  font-medium text-sm px-5 py-2.5 text-center 
-                            transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100"
+                className=" text-coklat cursor-pointer bg-coklat_muda  hover:bg-coklat hover:text-white  font-medium text-sm px-5 py-2.5 text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100 rounded-md"
               >
                 Kirim ke Whatsapp
               </button>
+
+              <Link
+                href={"/syarat-dan-ketentuan"}
+                className="text-coklat_tua underline"
+              >
+                Syarat &amp; Ketentuan
+              </Link>
             </section>
           </form>
         </section>

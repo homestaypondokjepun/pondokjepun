@@ -2,6 +2,7 @@
 import { motion } from "motion/react";
 
 const AccomodationFasilitas = () => {
+
     return (
         <section className="w-full max-w-5xl mx-auto  mb-5  ">
             <motion.section
@@ -85,3 +86,4 @@ const AccomodationFasilitas = () => {
 }
 
 export default AccomodationFasilitas;
+

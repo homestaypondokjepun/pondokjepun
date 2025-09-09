@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 
 export default function AccomodationPrice() {
+
     return (
 
         <div className="w-full max-w-5xl mx-auto mb-5  shadow-lg border border-gray-200 p-5 ">
@@ -71,10 +72,26 @@ export default function AccomodationPrice() {
                 </article>
 
 
+
             </section>
-
-
-        </div>
-
-    );
+            <div className="mt-6 bg-[#b58d66] inline-block rounded-md px-4 py-2 text-white font-bold">
+              IDR 500.000 / Malam
+            </div>
+          </div>
+          <div className="md:w-1/3 w-full relative p-4">
+            <div className="absolute inset-0  border-2 border-transparent pointer-events-none" />
+            <div className=" overflow-hidden shadow-md">
+              <Image
+                src="/Gallery/gallery (47).jpg"
+                alt="Standard room"
+                width={400}
+                height={250}
+                className="object-cover w-full h-48 md:h-full"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  );
 }
