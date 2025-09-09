@@ -1,4 +1,3 @@
-import BtnTerm from "@/components/term/BtnTerm";
 import Link from "next/link";
 
 export const metadata = {
