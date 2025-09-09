@@ -55,14 +55,6 @@ const Footer = () => {
                     Instagram
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
-                    X
-                  </a>
-                </li>
               </ul>
             </div>
             <div>
@@ -72,13 +64,16 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Privacy Policy
+                    Kebijakan Privasi
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Terms &amp; Conditions
-                  </a>
+                  <Link
+                    href="/syarat-dan-ketentuan"
+                    className="hover:underline"
+                  >
+                    Syarat &amp; Ketentuan
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -88,9 +83,9 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-coklat_muda sm:text-center ">
             © 2023{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </a>
+            <Link href="/" className="hover:underline">
+              Pondok Jepun Banyuwangi™
+            </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-4">
@@ -101,11 +96,6 @@ const Footer = () => {
             >
               <i className="fa-brands fa-instagram text-xl"></i>
               <span className="sr-only">Instagram page</span>
-            </a>
-
-            <a href="#" className="text-coklat_muda hover:text-white">
-              <i className="fa-brands fa-x-twitter text-xl"></i>
-              <span className="sr-only">Twitter page</span>
             </a>
 
             <a href="#" className="text-coklat_muda hover:text-white">

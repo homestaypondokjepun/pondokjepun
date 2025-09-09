@@ -1,4 +1,3 @@
-"use client";
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -13,8 +12,6 @@ import Video from "@/components/video";
 export default function Home() {
   return (
     <>
-      {/* rhmansjkdvajsvh */}
-      {/* TESSSSS */}
       <Navbar />
       <Header />
       <Welcome />
