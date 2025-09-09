@@ -153,7 +153,7 @@ export default function TermsAndConditions() {
         </div>
       </section>
 
-      <section className="mt-1 text-sm text-gray-500">
+      <section className="mt-5 text-sm text-gray-500">
         <p>
           Dokumen ini bersifat mengikat. Jika Anda memiliki pertanyaan terkait
           Syarat &amp; Ketentuan, silakan hubungi kami melalui halaman{" "}
