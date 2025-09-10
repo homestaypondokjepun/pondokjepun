@@ -11,8 +11,8 @@ const ContactForm = () => {
   const sendWhatsapp = (e) => {
     e.preventDefault();
 
-    const whatsappMessage = `Halo, saya: ${nama}\nemail: ${email}\n${pesan}`;
-    const url = `https://wa.me/6282247739704?text=${encodeURIComponent(
+    const whatsappMessage = `Halo, saya: ${nama}\nEmail: ${email}\nPesan: ${pesan}`;
+    const url = `https://wa.me/6282132487131?text=${encodeURIComponent(
       whatsappMessage
     )}`;
     window.open(url, "_blank");
@@ -47,12 +47,11 @@ const ContactForm = () => {
 
           <section className=" mt-5  p-2">
             <section className=" p-2">
-              <Link
-                href={"https://wa.me/6285732225227"}
-                target="_blank"
+              <a
+                href="tel:+6282132487131"
                 className="cursor-pointer flex gap-5 hover:text-coklat_muda hover:fill-coklat_muda"
               >
-                <section className="w-[25px] content-center  ml-4">
+                <section className="w-[25px] content-center ml-4">
                   <svg
                     className="fill-coklat"
                     xmlns="http://www.w3.org/2000/svg"
@@ -62,14 +61,15 @@ const ContactForm = () => {
                   </svg>
                 </section>
                 <section className="teramo md:text-[20px] text-[18px] text-coklat_tua">
-                  <p>09077687589</p>
+                  <p>082132487131</p>
                 </section>
-              </Link>
+              </a>
             </section>
 
             <section className=" p-2">
-              <Link
-                href={"https://wa.me/6285732225227"}
+              <a
+                href="https://wa.me/+6282132487131"
+                target="_blank"
                 className="cursor-pointer flex gap-5 hover:text-coklat_muda hover:fill-coklat_muda"
               >
                 <section className="w-[25px] content-center  ml-4">
@@ -84,12 +84,12 @@ const ContactForm = () => {
                 <section className="teramo md:text-[20px] text-[18px] text-coklat_tua">
                   <p>WhatsApp</p>
                 </section>
-              </Link>
+              </a>
             </section>
 
             <section className=" p-2">
-              <Link
-                href={"mailto:rhmymfdy@gmail.com"}
+              <a
+                href={"mailto:pondokjepun25@gmail.com"}
                 className="cursor-pointer flex gap-5 hover:text-coklat_muda hover:fill-coklat_muda"
               >
                 <section className="w-[25px] content-center  ml-4">
@@ -104,12 +104,13 @@ const ContactForm = () => {
                 <section className="teramo md:text-[20px] text-[18px] text-coklat_tua">
                   <p>Mail</p>
                 </section>
-              </Link>
+              </a>
             </section>
 
             <section className=" p-2">
-              <Link
-                href={"https://www.instagram.com/rhmymfdy/"}
+              <a
+                href={"https://www.instagram.com/pondok_jepun25"}
+                target="_blank"
                 className="cursor-pointer flex gap-5 hover:text-coklat_muda hover:fill-coklat_muda"
               >
                 <section className="w-[25px] content-center  ml-4">
@@ -124,7 +125,7 @@ const ContactForm = () => {
                 <section className="teramo md:text-[20px] text-[18px] text-coklat_tua">
                   <p>Instagram</p>
                 </section>
-              </Link>
+              </a>
             </section>
           </section>
         </section>
