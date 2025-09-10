@@ -39,9 +39,9 @@ export const metadata = {
 
 export default function TermsAndConditions() {
   return (
-    <main className="max-w-6xl mx-auto px-4 py-4">
+    <section className="max-w-6xl mx-auto px-4 py-4">
       <section className="bg-white rounded-2xl shadow p-8">
-        <div className="flex items-start gap-6">
+        <div className="gap-6 flex flex-col lg:flex-row">
           <div className="flex-1">
             <h2 className="mb-2 nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">
               Syarat &amp; Ketentuan Pondok Jepun Homestay
@@ -127,14 +127,14 @@ export default function TermsAndConditions() {
             </ol>
           </div>
 
-          <aside className="w-72 hidden lg:block">
+          <aside className="w-72 block">
             <div className="bg-gray-50 border border-gray-100 rounded-lg p-4 shadow-sm">
               <h4 className="font-semibold mb-2 teramo text-coklat_tua">
                 Info Cepat
               </h4>
               <ul className="text-sm text-coklat_tua space-y-2">
-                <li>📍 Lokasi: Jantung Kota Banyuwangi</li>
-                <li>📞 WA: 08xxxxxxxxxx</li>
+                <li>📍 Lokasi: Sumberrejo, Kec. Banyuwangi,</li>
+                <li>📞 WA: +62 821-3248-7131</li>
                 <li>⏰ Check-in: 14:00 | Check-out: 12:00</li>
                 <li>💵 Harga mulai: Rp500.000/malam</li>
               </ul>
@@ -163,6 +163,6 @@ export default function TermsAndConditions() {
           .
         </p>
       </section>
-    </main>
+    </section>
   );
 }

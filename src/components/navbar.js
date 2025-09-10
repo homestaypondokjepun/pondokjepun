@@ -59,10 +59,8 @@ export default function Navbar() {
           </section>
 
           <section className="items-center gap-10 hidden sm:flex ">
-
             <p className="text-2xl text-coklat font-bold">+62 821-3248-7131</p>
-            <button className="py-2 px-5 font-bold bg-coklat rounded text-coklat_muda cursor-pointer hover:bg-coklat_tua">
-
+            <button className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua">
               Hubungi Kami
             </button>
           </section>
@@ -70,13 +68,11 @@ export default function Navbar() {
       </section>
 
       <motion.nav
-
-
-        className={`z-50 w-full ${scrolled
-          ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
-          : "relative bg-white md:bg-coklat_muda"
-          }`}
-
+        className={`z-50 w-full ${
+          scrolled
+            ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
+            : "relative bg-white md:bg-coklat_muda"
+        }`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center ">
           <Link
@@ -211,7 +207,6 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
-
                 >
                   <p
                     className={`text-coklat border-b-2 ${

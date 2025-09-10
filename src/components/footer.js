@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center gap-1">
-
               <Image
                 src="/logo.png"
                 className="h-8 me-1"
@@ -17,7 +16,6 @@ const Footer = () => {
                 width={35}
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-
                 Jepun
               </span>
             </Link>
@@ -35,7 +33,8 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
+                    href="https://wa.me/+6282132487131"
+                    target="_blank"
                     className="hover:underline"
                   >
                     Kontak Kami
@@ -65,9 +64,9 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500  font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="/kebijakan-privasi" className="hover:underline">
                     Kebijakan Privasi
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -83,14 +82,8 @@ const Footer = () => {
         </div>
         <hr className="my-6 text-coklat_tua border-coklat_tua sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-
           <span className="text-sm text-coklat_tua sm:text-center hover:underline ">
-            © 2025{" "}
-            <Link href="/" >
-              Pondok Jepun™
-
-            </Link>
-            . All Rights Reserved.
+            © 2025 <Link href="/">Pondok Jepun™</Link>. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0 gap-4">
             <a
@@ -102,14 +95,11 @@ const Footer = () => {
               <span className="sr-only">Instagram page</span>
             </a>
 
-
-            <a href="#" className="text-coklat_tua hover:text-coklat_tua">
-              <i className="fa-brands fa-x-twitter text-xl"></i>
-              <span className="sr-only">Twitter page</span>
-            </a>
-
-            <a href="#" className="text-coklat_tua hover:text-coklat_tua">
-
+            <a
+              href="https://wa.me/+6282132487131"
+              target="_blank"
+              className="text-coklat_tua hover:text-coklat_tua"
+            >
               <i className="fa-brands fa-whatsapp text-xl"></i>
               <span className="sr-only">Whatsapp page</span>
             </a>

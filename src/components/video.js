@@ -1,38 +1,61 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 
 const VideoHero = () => {
+  const playerRef = useRef(null);
+
   useEffect(() => {
-    const tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    document.body.appendChild(tag);
+    // Cek apakah API sudah ada
+    if (!window.YT) {
+      // Load YouTube API script
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.body.appendChild(tag);
 
-    window.onYouTubeIframeAPIReady = () => {
-      new window.YT.Player("ytplayer", {
-        videoId: "JfFG_ltRv-k",
-        playerVars: {
-          autoplay: 0,
-          mute: 0,
-          modestbranding: 1,
-          rel: 0,
-          controls: 1,
-        },
-        events: {
-          onStateChange: (event) => {
-            if (event.data === window.YT.PlayerState.PLAYING) {
-              event.target.unMute();
-              event.target.setVolume(100);
-              event.target.setPlaybackQuality("highres");
-            }
+      window.onYouTubeIframeAPIReady = () => {
+        createPlayer();
+      };
+    } else {
+      // API sudah ada, langsung buat player
+      createPlayer();
+    }
 
-            if (event.data === window.YT.PlayerState.ENDED) {
-              event.target.playVideo();
-            }
+    function createPlayer() {
+      // Pastikan player belum dibuat
+      if (!playerRef.current) {
+        playerRef.current = new window.YT.Player("ytplayer", {
+          videoId: "JfFG_ltRv-k",
+          playerVars: {
+            autoplay: 0,
+            mute: 0,
+            modestbranding: 1,
+            rel: 0,
+            controls: 1,
           },
-        },
-      });
+          events: {
+            onStateChange: (event) => {
+              if (event.data === window.YT.PlayerState.PLAYING) {
+                event.target.unMute();
+                event.target.setVolume(100);
+                event.target.setPlaybackQuality("highres");
+              }
+              if (event.data === window.YT.PlayerState.ENDED) {
+                event.target.playVideo();
+              }
+            },
+          },
+        });
+      }
+    }
+
+    // Cleanup saat unmount
+    return () => {
+      if (playerRef.current) {
+        playerRef.current.destroy();
+        playerRef.current = null;
+      }
     };
   }, []);
 
