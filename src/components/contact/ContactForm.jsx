@@ -189,7 +189,7 @@ const ContactForm = () => {
 
               <Link
                 href={"/syarat-dan-ketentuan"}
-                className="text-coklat_tua underline"
+                className="text-coklat_tua underline text-sm"
               >
                 Syarat &amp; Ketentuan
               </Link>
