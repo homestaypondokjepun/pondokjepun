@@ -47,7 +47,7 @@ const OurHome = () => {
           transition={{ duration: 0.8, ease: "linear" }}
           className="p-2 text-center"
         >
-          <h2 className="nicolas font-semibold text-coklat_tua text-4xl">
+          <h2 className="nicolas font-semibold text-coklat_tua text-[28px] md:text-[42px] ">
             Tempat yang nyaman untuk beristirahat, seperti di rumah sendiri.
           </h2>
           <p className="teramo p-2 text-xl font-medium text-coklat_tua">
