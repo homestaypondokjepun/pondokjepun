@@ -60,9 +60,13 @@ export default function Navbar() {
 
           <section className="items-center gap-10 hidden sm:flex ">
             <p className="text-2xl text-coklat font-bold">+62 821-3248-7131</p>
-            <button className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua">
+            <a
+              href="https://wa.me/+6282132487131"
+              target="_blank"
+              className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua"
+            >
               Hubungi Kami
-            </button>
+            </a>
           </section>
         </section>
       </section>

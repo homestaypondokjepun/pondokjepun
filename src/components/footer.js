@@ -15,14 +15,14 @@ const Footer = () => {
                 height={50}
                 width={35}
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-coklat_tua">
                 Jepun
               </span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-coklat_tua">
                 TENTANG KAMI
               </h2>
               <ul className="text-gray-500  font-medium">
@@ -43,7 +43,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-coklat_tua uppercase ">
                 IKUTI KAMI
               </h2>
               <ul className="text-gray-500  font-medium">
@@ -59,7 +59,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              <h2 className="mb-6 text-sm font-semibold text-coklat_tua uppercase ">
                 Legal
               </h2>
               <ul className="text-gray-500  font-medium">
