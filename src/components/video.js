@@ -69,7 +69,7 @@ const VideoHero = () => {
       <section className="w-full max-w-6xl rounded-md overflow-hidden shadow-2xl border border-gray-100">
         {/* Teks di atas video */}
         <div className="text-center p-6">
-          <h1 className="teramo font-bold text-2xl md:text-3xl text-coklat_tua">
+          <h1 className="nicolas font-bold text-[28px] md:text-[42px]  text-coklat_tua">
             Guest House Pondok Jepun 🌿
           </h1>
           <p className="mt-4 max-w-3xl mx-auto text-sm md:text-base leading-relaxed text-coklat_tua">

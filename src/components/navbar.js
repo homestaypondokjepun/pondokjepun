@@ -38,9 +38,12 @@ export default function Navbar() {
               </section>
             </section>
             <section className="flex items-center gap-2 ">
-              <section className="border border-coklat w-10 h-10 rounded-full flex justify-center items-center hover:animate-contact duration-75">
+              <a
+                href={"mailto:pondokjepun25@gmail.com"}
+                className="border border-coklat w-10 h-10 rounded-full flex justify-center items-center hover:animate-contact duration-75"
+              >
                 <i className="fa-solid fa-envelope text-xl text-coklat"></i>
-              </section>
+              </a>
               <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
                 <p>Email Kami</p>
                 <p>pondokjepun25@gmail.com</p>
@@ -61,7 +64,7 @@ export default function Navbar() {
           <section className="items-center gap-10 hidden sm:flex ">
             <p className="text-2xl text-coklat font-bold">+62 821-3248-7131</p>
             <a
-              href="https://wa.me/+6282132487131"
+              href="https://wa.me/6282132487131"
               target="_blank"
               className="py-2 px-5 font-bold bg-coklat rounded-md text-coklat_muda cursor-pointer hover:bg-coklat_tua"
             >

@@ -68,7 +68,7 @@ const ContactForm = () => {
 
             <section className=" p-2">
               <a
-                href="https://wa.me/+6282132487131"
+                href="https://wa.me/6282132487131"
                 target="_blank"
                 className="cursor-pointer flex gap-5 hover:text-coklat_muda hover:fill-coklat_muda"
               >

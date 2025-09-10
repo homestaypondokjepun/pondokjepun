@@ -33,7 +33,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://wa.me/+6282132487131"
+                    href="https://wa.me/6282132487131"
                     target="_blank"
                     className="hover:underline"
                   >
@@ -96,7 +96,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://wa.me/+6282132487131"
+              href="https://wa.me/6282132487131"
               target="_blank"
               className="text-coklat_tua hover:text-coklat_tua"
             >
