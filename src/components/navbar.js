@@ -196,6 +196,22 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
+                  href="/cara-pemesanan"
+                  className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
+                >
+                  <p
+                    className={`text-coklat border-b-2  ${
+                      pathname === "/cara-pemesanan"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
+                  >
+                    Cara Pemesanan
+                  </p>
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
