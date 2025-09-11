@@ -69,12 +69,12 @@ const VideoHero = () => {
       <section className="w-full max-w-6xl rounded-md overflow-hidden shadow-2xl border border-gray-100">
         {/* Teks di atas video */}
         <div className="text-center p-6">
-          <h1 className="nicolas font-bold text-[28px] md:text-[42px]  text-coklat_tua">
+          <h1 className="teramo font-bold text-[24px] md:text-[32px]  text-coklat_tua">
             Guest House Pondok Jepun 🌿
           </h1>
-          <p className="mt-4 max-w-3xl mx-auto text-sm md:text-base leading-relaxed text-coklat_tua">
+          <p className="mt-4 max-w-3xl font-semibold mx-auto text-sm md:text-base leading-relaxed text-coklat_tua">
             Ada yang baru di Banyuwangi! Guest House{" "}
-            <span className="font-semibold">Pondok Jepun</span> hadir di jantung
+            <span className="font-bold">Pondok Jepun</span> hadir di jantung
             kota dengan suasana tenang dan nyaman. Lokasi strategis, hanya 100
             meter dari Satpas Banyuwangi. Yuk, nikmati liburan seru bersama kami
             di Pondok Jepun! ✨

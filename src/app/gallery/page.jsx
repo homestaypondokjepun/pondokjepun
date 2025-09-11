@@ -6,6 +6,7 @@ import Footer from "@/components/footer"
 
 import GalleryHead from "@/components/Gallery/GalleryHead";
 import GalleryFoto from "@/components/Gallery/GalleryFoto";
+import ButtonChat from "@/components/buttonChat";
 
 export const metadata = {
   title: "Galeri",
@@ -44,17 +45,15 @@ export const metadata = {
   },
 };
 
+
 export default function Gallery() {
-    return (
-        <>
-
-            <Navbar />
-
-            <GalleryHead />
-
-
+  return (
+    <>
+      <Navbar />
+      <GalleryHead />
       <GalleryFoto />
       <Footer />
+      <ButtonChat />
     </>
   );
 }

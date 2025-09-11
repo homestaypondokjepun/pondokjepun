@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const images1 = [
   "/KamarDouble/NDA_7483.jpg",
@@ -39,7 +40,7 @@ const OurHome = () => {
   const goToSlide2 = (index) => setCurrent2(index);
 
   return (
-    <section className=" bg-coklat_muda p-5">
+    <section className="  p-5">
       <section className="w-full p-3">
         <motion.section
           initial={{ opacity: 0 }}
@@ -47,13 +48,13 @@ const OurHome = () => {
           transition={{ duration: 0.8, ease: "linear" }}
           className="p-2 text-center"
         >
-          <h2 className="nicolas font-semibold text-coklat_tua text-[28px] md:text-[42px] ">
+          <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] mb-1">
             Tempat yang nyaman untuk beristirahat, seperti di rumah sendiri.
           </h2>
           <p className="teramo p-2 text-xl font-medium text-coklat_tua">
             Rumah Kita
           </p>
-          <hr className="m-auto w-40 h-1 rounded-2xl bg-coklat_tua text-coklat_tua" />
+          <hr className="m-auto w-[80%]  rounded-2xl bg-coklat_tua text-coklat_tua" />
         </motion.section>
       </section>
 
@@ -71,9 +72,8 @@ const OurHome = () => {
                 {images1.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      index === current1 ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current1 ? "opacity-100" : "opacity-0"
+                      }`}
                   >
                     <Image
                       src={src}
@@ -91,9 +91,8 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide1(index)}
-                    className={`w-3 h-3 rounded-full ${
-                      index === current1 ? "bg-white" : "bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full ${index === current1 ? "bg-white" : "bg-gray-400"
+                      }`}
                   ></button>
                 ))}
               </div>
@@ -144,17 +143,19 @@ const OurHome = () => {
               </button>
             </section>
 
-            <div className="p-5">
-              <h5 className="mb-2 text-[24px] md:text-[32px] font-bold nicolas tracking-tight text-coklat_tua">
-                Standard Double Bed
-              </h5>
-              <hr className="text-coklat_tua" />
-              <p className="mb-3 teramo font-normal text-[14px] md:text-[16px] text-coklat">
-                Kamar nyaman dengan tempat tidur double untuk dua orang, cocok
-                untuk pasangan atau tamu yang ingin beristirahat dengan tenang.
-                Dilengkapi fasilitas dasar untuk kenyamanan Anda.
-              </p>
-            </div>
+            <Link href={"/akomodasi"}>
+              <div className="p-5">
+                <h5 className="mb-2 teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] ">
+                  Standard Double Bed
+                </h5>
+
+                <hr className="text-coklat_tua mb-3" />
+                <p className=" teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                  Kamar nyaman dengan tempat tidur double untuk dua orang, cocok
+                  untuk pasangan atau tamu yang ingin beristirahat dengan tenang.
+                  Dilengkapi fasilitas dasar untuk kenyamanan Anda.
+                </p>
+              </div></Link>
           </motion.div>
 
           {/* CARD 2 */}
@@ -169,9 +170,8 @@ const OurHome = () => {
                 {images2.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                      index === current2 ? "opacity-100" : "opacity-0"
-                    }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current2 ? "opacity-100" : "opacity-0"
+                      }`}
                   >
                     <Image
                       src={src}
@@ -189,9 +189,8 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide2(index)}
-                    className={`w-3 h-3 rounded-full ${
-                      index === current2 ? "bg-white" : "bg-gray-400"
-                    }`}
+                    className={`w-3 h-3 rounded-full ${index === current2 ? "bg-white" : "bg-gray-400"
+                      }`}
                   ></button>
                 ))}
               </div>
@@ -242,18 +241,21 @@ const OurHome = () => {
               </button>
             </section>
 
-            <div className="p-5">
-              <h5 className="mb-2 text-[24px] md:text-[32px] font-bold nicolas tracking-tight text-coklat_tua">
-                Standard Single Bed
-              </h5>
-              <hr className="text-coklat_tua" />
-              <p className="mb-3 teramo text-[14px] md:text-[16px] font-normal text-coklat">
-                Kamar pribadi dengan tempat tidur single yang nyaman, cocok
-                untuk Anda yang menginginkan suasana tenang dan istirahat
-                berkualitas. Pilihan tepat untuk pengalaman menginap yang simple
-                dan menyenangkan.
-              </p>
-            </div>
+            <Link
+              href={"/akomodasi"}>
+              <div className="p-5">
+                <h5 className="mb-2 teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
+                  Standard Single Bed
+                </h5>
+                <hr className="text-coklat_tua mb-3" />
+                <p className="mb-3 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                  Kamar pribadi dengan tempat tidur single yang nyaman, cocok
+                  untuk Anda yang menginginkan suasana tenang dan istirahat
+                  berkualitas. Pilihan tepat untuk pengalaman menginap yang simple
+                  dan menyenangkan.
+                </p>
+              </div>
+            </Link>
           </motion.div>
         </section>
       </section>

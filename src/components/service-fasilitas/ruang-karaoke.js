@@ -28,31 +28,32 @@ const RuangKaraoke = () => {
   };
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: "linear" }}
+    <section
       className="p-1 md:p-4 flex items-center overflow-hidden"
     >
       {/* Tampilan Desktop */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Left Section (Text) */}
-        <section className="p-6 flex-col content-center hidden md:block pl-30 pr-10   ">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
+          className="p-6 flex-col content-center hidden md:block    ">
           <h5
-            className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
+            className={`nicolas mb-2 text-coklat_tua font-bold text-lg md:text-xl `}
           >
-            Layanan & Fasilitas
+            Fasilitas
           </h5>
 
-          <section className="p-4 rounded-lg text-coklat_tua pr-20">
+          <section className=" rounded-lg text-coklat_tua ">
             <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
-              Guest Home Jepun
+              Guest Home Pondok Jepun
             </h1>
             <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
               Ruang Karaoke
             </h1>
 
-            <p className="mt-4 text-sm md:text-base leading-relaxed">
+            <p className="mt-4 mr-30 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
               berbincang, atau sekadar menikmati suasana homestay yang hangat.
               Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah
@@ -60,13 +61,13 @@ const RuangKaraoke = () => {
             </p>
 
             <Link
-              href={"/contact"}
+              href={"/service-fasilitas"}
               type="button"
               className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
                 focus:outline-none focus:ring-blue-300 font-medium rounded-md 
                 text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
             >
-              Pilih Rencana
+              Detail Fasilitas
               <svg
                 className="rtl:rotate-180 w-3.5 h-3.5 ml-2"
                 aria-hidden="true"
@@ -84,24 +85,27 @@ const RuangKaraoke = () => {
               </svg>
             </Link>
           </section>
-        </section>
+        </motion.section>
 
         {/* Right Section (Carousel) */}
-        <section className="relative  overflow-hidden content-center hidden md:block ">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
+          className="relative  overflow-hidden content-center hidden md:block ">
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === current ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <Image
                   src={src}
                   alt={`Slide ${index + 1}`}
                   fill
-                  className="object-cover rounded-md"
+                  className="object-cover "
                 />
               </div>
             ))}
@@ -113,9 +117,8 @@ const RuangKaraoke = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -165,20 +168,23 @@ const RuangKaraoke = () => {
               </svg>
             </span>
           </button>
-        </section>
+        </motion.section>
       </section>
       {/* Tampilan Mobile */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:hidden ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 md:hidden  ">
         {/* Right Section (Carousel) */}
-        <section className="relative rounded-md overflow-hidden">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
+          className="relative  overflow-hidden">
           {/* Wrapper */}
           <div className="relative aspect-video md:aspect-full md:h-full">
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === current ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <Image
                   src={src}
@@ -196,9 +202,8 @@ const RuangKaraoke = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -248,58 +253,64 @@ const RuangKaraoke = () => {
               </svg>
             </span>
           </button>
-        </section>
+        </motion.section>
         {/* Left Section (Text) */}
-        <section className="p-6 flex flex-col justify-center ">
-          <h5
-            className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-4`}
+        <motion.section
+          className="p-6 flex-col content-center block md:block "
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "linear" }}
+        >
+          <section
+            className="  flex flex-col justify-center "
           >
-            Layanan & Fasilitas
-          </h5>
-
-          <section className="p-4 rounded-lg text-coklat_tua">
-            <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
-              Guest Home Jepun
-            </h1>
-            <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
-              Ruang Karaoke
-            </h1>
-
-            <p className="mt-4 text-sm md:text-base leading-relaxed">
-              Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
-              berbincang, atau sekadar menikmati suasana homestay yang hangat.
-              Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah
-              sendiri.
-            </p>
-
-            <Link
-              href={"/contact"}
-              type="button"
-              className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
-                focus:outline-none focus:ring-blue-300 font-medium rounded-md
-                text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
+            <h5
+              className={`nicolas text-coklat_tua font-bold text-lg md:text-xl mb-2`}
             >
-              Pilih Rencana
-              <svg
-                className="rtl:rotate-180 w-3.5 h-3.5 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
+              Fasilitas
+            </h5>
+
+            <section className=" rounded-lg text-coklat_tua">
+              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+                Guest Home Pondok Jepun
+              </h1>
+              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+                Ruang Karaoke
+              </h1>
+
+              <p className="mt-4 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                Area bersantai yang nyaman dan bersih, cocok untuk berkumpul, berbincang, atau sekadar menikmati suasana homestay yang hangat. Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah sendiri.
+              </p>
+
+              <Link
+                href={"/service-fasilitas"}
+                type="button"
+                className="mt-6 text-white bg-coklat hover:bg-coklat_tua 
+                focus:outline-none focus:ring-blue-300 font-medium rounded-md 
+                text-sm md:text-base px-5 py-2.5 inline-flex items-center cursor-pointer"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </Link>
+                Detail Fasilitas
+                <svg
+                  className="rtl:rotate-180 w-3.5 h-3.5 ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </Link>
+            </section>
           </section>
-        </section>
+        </motion.section>
       </section>
-    </motion.section>
+    </section>
   );
 };
 
