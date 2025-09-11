@@ -76,8 +76,8 @@ export default function Navbar() {
 
       <motion.nav
         className={`z-50 w-full ${scrolled
-            ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
-            : "relative bg-white md:bg-coklat_muda"
+          ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
+          : "relative bg-white md:bg-coklat_muda"
           }`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center ">
@@ -136,8 +136,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2  ${pathname === "/"
-                        ? "  border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "  border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Home
@@ -151,8 +151,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2  ${pathname === "/akomodasi"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Akomodasi
@@ -166,8 +166,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2 ${pathname === "/service-fasilitas"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Fasilitas
@@ -181,8 +181,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2  ${pathname === "/pricing"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Gallery
@@ -196,8 +196,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2  ${pathname === "/cara-pemesanan"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Cara Pemesanan
@@ -211,8 +211,8 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat border-b-2 ${pathname === "/contact"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Contact
@@ -221,13 +221,13 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/Kost/LandingPage"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2 ${pathname === "/contact"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
+                    className={`text-coklat border-b-2 ${pathname === "/Kost/LandingPage"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
                       } `}
                   >
                     Kost Arka Dewata

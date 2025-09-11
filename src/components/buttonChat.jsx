@@ -40,7 +40,7 @@ const ButtonChat = () => {
             <section className="flex justify-center items-center">
                 <button
                     onClick={() => setShowPopup(true)}
-                    className="w-full flex justify-center items-center h-10 text-white bg-coklat_tua  font-medium rounded-lg text-sm px-5 py-2.5"
+                    className="w-full flex justify-center cursor-pointer items-center h-10 text-white bg-coklat_tua  font-medium rounded-lg text-sm px-5 py-2.5"
                 >
                     <svg
                         className="w-3.5 h-3.5 mr-2"
@@ -62,55 +62,59 @@ const ButtonChat = () => {
                         {/* Tombol Close */}
                         <button
                             onClick={() => setShowPopup(false)}
-                            className="absolute top-2 right-2 font-extrabold cursor-pointer p-2 md:text-[24px] text-[24px]  mr-2 text-gray-500 hover:text-black"
+                            className="absolute top-2 right-2 font-extrabold cursor-pointer p-2 md:text-[24px] text-[24px] mr-2 text-gray-500 hover:text-black"
                         >
                             ✕
                         </button>
 
                         {/* Judul */}
-                        <h2 className="text-lg md:text-xl font-semibold text-coklat_tua mb-4 text-center">
+                        <h2 className="text-lg md:text-xl teramo font-semibold text-coklat_tua mb-4 text-center">
                             Form Pemesanan
                         </h2>
 
                         {/* Form */}
-                        <form onSubmit={sendWhatsapp} className="space-y-4  p-1 rounded-md">
+                        <form onSubmit={sendWhatsapp} className="space-y-4 p-1 rounded-md">
                             {/* Date Picker */}
+                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Pilih Tanggal Booking</label>
                             <DatePicker
                                 selected={tanggal}
                                 onChange={(date) => setTanggal(date)}
                                 dateFormat="dd/MM/yyyy"
                                 placeholderText="Pilih tanggal"
-                                className="w-full border p-2 rounded-md "
+                                className="w-[320px] md:w-[380px] h-12 border border-gray-200  px-3 rounded-md teramo text-sm"
                                 required
                             />
 
                             {/* Nama */}
+                            <label for="email" class="block teramo text-coklat_tua mb-2 text-sm font-medium text-left ml-3 ">Nama Lengkap</label>
                             <input
                                 type="text"
                                 placeholder="Nama Lengkap"
-                                className="w-full border p-2 rounded-md "
+                                className="w-[320px] md:w-[380px] h-12 border border-gray-200 px-3 rounded-md teramo text-sm"
                                 value={nama}
                                 onChange={(e) => setNama(e.target.value)}
                                 required
                             />
 
                             {/* Jumlah Dewasa */}
+                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Orang Dewasa</label>
                             <input
                                 type="number"
                                 placeholder="Jumlah Dewasa"
                                 min="1"
-                                className="w-full border p-2 rounded-md "
+                                className="w-[320px] md:w-[380px] h-12 border border-gray-200 px-3 rounded-md teramo text-sm"
                                 value={dewasa}
                                 onChange={(e) => setDewasa(e.target.value)}
                                 required
                             />
 
                             {/* Jumlah Anak */}
+                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Anak - anak</label>
                             <input
                                 type="number"
                                 placeholder="Jumlah Anak-anak"
                                 min="0"
-                                className="w-full border p-2 rounded-md "
+                                className="w-[320px] md:w-[380px] h-12 border border-gray-200 px-3 rounded-md teramo text-sm"
                                 value={anak}
                                 onChange={(e) => setAnak(e.target.value)}
                                 required
@@ -119,16 +123,15 @@ const ButtonChat = () => {
                             {/* Tombol Submit */}
                             <button
                                 type="submit"
-                                className="w-full bg-coklat_tua text-white py-2 cursor-pointer rounded-md hover:bg-coklat_muda hover:text-coklat_tua hover:border hover:border-coklat_tua transition"
+                                className="w-full h-12 bg-coklat_tua text-white rounded-md hover:bg-coklat_muda hover:text-coklat_tua hover:border hover:border-coklat_tua transition text-base font-medium"
                             >
                                 Kirim ke Whatsapp
                             </button>
                         </form>
-
-
                     </div>
                 </div>
             )}
+
         </section>
     );
 };
