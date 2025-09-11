@@ -8,6 +8,8 @@ import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import RuangMakan from "@/components/service-fasilitas/ruang-makan";
 import RuangKaraoke from "@/components/service-fasilitas/ruang-karaoke";
 import Video from "@/components/video";
+import ReviewUser from "@/components/reviewUser";
+import ButtonChat from "@/components/buttonChat";
 
 export default function Home() {
   return (
@@ -21,7 +23,9 @@ export default function Home() {
       <RuangKaraoke />
       <Fasilitas />
       <Video />
+      <ReviewUser />
       <Footer />
+      <ButtonChat />
     </>
   );
 }

@@ -8,6 +8,10 @@ import Footer from "@/components/footer"
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import MejaMakan from "@/components/service-fasilitas/ruang-makan";
 import RuangKaraoke from "@/components/service-fasilitas/ruang-karaoke";
+import KolamIkan from "@/components/service-fasilitas/kolam-ikan";
+import ReviewUser from "@/components/reviewUser";
+
+import ButtonChat from "@/components/buttonChat";
 
 export const metadata = {
   title: "Fasilitas & Layanan",
@@ -49,17 +53,20 @@ export const metadata = {
 
 export default function Service_Fasilitas() {
 
-    return (
-        <>
+  return (
+    <>
 
-            <Navbar />
-            <Header />
-            <RuangTamu />
-            <MejaMakan />
-            <RuangKaraoke />
-            <Footer />
+      <Navbar />
+      <Header />
+      <RuangTamu />
+      <MejaMakan />
+      <RuangKaraoke />
+      <KolamIkan />
+      <ReviewUser />
+      <Footer />
+      <ButtonChat />
 
-        </>
-    );
+    </>
+  );
 
 }

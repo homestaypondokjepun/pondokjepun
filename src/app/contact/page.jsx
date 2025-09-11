@@ -7,6 +7,7 @@ import Footer from "@/components/footer"
 import ContactHead from "@/components/contact/ContactHead";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactMaps from "@/components/contact/ContactMaps";
+import ButtonChat from "@/components/buttonChat";
 
 export const metadata = {
   title: "Kontak",
@@ -48,15 +49,16 @@ export const metadata = {
 export default function Kontak() {
 
 
-    return (
-        <>
-            <Navbar />
-            <ContactHead />
-            <ContactForm />
-            <ContactMaps />
-            <Footer />
+  return (
+    <>
+      <Navbar />
+      <ContactHead />
+      <ContactForm />
+      <ContactMaps />
+      <Footer />
+      <ButtonChat />
 
-        </>
-    );
+    </>
+  );
 
 }

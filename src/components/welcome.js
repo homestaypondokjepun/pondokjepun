@@ -6,8 +6,8 @@ import { motion } from "motion/react";
 const Welcome = () => {
   return (
     <section className="mb-2 md:mb-2 lg:mb-32">
-      <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0 ">
-        <section className="w-full flex justify-end py-10 md:py-0">
+      <section className="flex justify-center flex-wrap md:flex-nowrap w-full md:w-4/5 m-auto px-5 md:px-0   ">
+        <section className="w-full flex justify-end py-2 md:py-0">
           <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -37,46 +37,20 @@ const Welcome = () => {
             </motion.section>
           </motion.section>
 
-          <section className="flex flex-wrap gap-5 md:hidden overflow-hidden">
-            <motion.section
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, ease: "linear" }}
-            >
-              <Image
-                src="/LandingPage/NDA_7417.jpg"
-                width={800} // ubah sesuai kebutuhan
-                height={800} // ubah sesuai kebutuhan
-                alt="Living room"
-                className="m-auto rounded-md"
-              />
-            </motion.section>
-            <motion.section
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8, ease: "linear" }}
-            >
-              <Image
-                src="/LandingPage/NDA_7482.jpg"
-                width={800} // ubah sesuai kebutuhan
-                height={800} // ubah sesuai kebutuhan
-                alt="Living room"
-                className="m-auto rounded-md"
-              />
-            </motion.section>
-          </section>
+
         </section>
 
-        <section className=" w-full bg-coklat_muda px-14 pr-5 py-10 h-fit rounded-md md:rounded-r- overflow-hidden">
+        <section className="w-full mb-3 md:mb-0  bg-coklat_muda px-5 pr-5 py-10 h-fit  overflow-hidden">
           <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "linear" }}
+            className=""
           >
-            <h2 className="nicolas font-semibold md:text-[32px]  text-[32px] text-coklat_tua">
+            <h2 className=" teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] mb-4">
               Selamat Datang
             </h2>
-            <p className="teramo font-medium tracking-wider md:text-[18px] text-[14px] mt-4 text-coklat_tua ">
+            <p className="teramo md:text-[18px] font-semibold text-[16px]  text-coklat_tua  tracking-wider mt-4  ">
               Tentang Kami
             </p>
           </motion.section>
@@ -84,14 +58,14 @@ const Welcome = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, ease: "linear" }}
-            className="mt-5"
+            className="mt-5 "
           >
-            <p className="teramo font-medium md:text-[16px] text-[14px] leading-7 text-coklat_tua">
+            <p className="teramo md:text-[16px] font-semibold text-[14px]   leading-7 text-coklat_tua">
               Pondok Jepun, Nyaman Seperti di Rumah Sendiri Strategis, Tenang,
               dan Dekat ke Semua Destinasi
             </p>
 
-            <p className="teramo md:text-[16px] text-[14px] leading-7 mt-5 text-coklat_tua">
+            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua leading-7 mt-5">
               Nikmati pengalaman menginap yang nyaman dan tenang di Guest House
               Pondok Jepun, sebuah penginapan bergaya homy yang terletak
               strategis di jantung kota Banyuwangi. Dikelilingi oleh pesona alam
@@ -107,7 +81,7 @@ const Welcome = () => {
                     <i className="fa-solid fa-check text-sm"></i>
                   </section>
                 </section>
-                <p className="teramo md:text-[16px] text-[14px] font-medium text-coklat_tua">
+                <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Menyuguhkan kamar yang nyaman, bersih, dan menenangkan.
                 </p>
               </section>
@@ -117,14 +91,14 @@ const Welcome = () => {
                     <i className="fa-solid fa-check text-sm"></i>
                   </section>
                 </section>
-                <p className="teramo md:text-[16px] text-[14px] font-medium text-coklat_tua">
+                <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar utama nyaman dengan AC, TV, dan water heater.
                 </p>
               </section>
             </section>
 
             <Link
-              href="/service-fasilitas"
+              href="/akomodasi"
               className="mt-16 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-coklat_muda rounded-md bg-coklat hover:bg-coklat_tua "
             >
               Jelajahi Sekarang
@@ -144,6 +118,36 @@ const Welcome = () => {
                 />
               </svg>
             </Link>
+
+          </motion.section>
+
+        </section>
+        <section className="  flex flex-wrap gap-5 md:hidden overflow-hidden">
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
+          >
+            <Image
+              src="/LandingPage/NDA_7417.jpg"
+              width={800} // ubah sesuai kebutuhan
+              height={800} // ubah sesuai kebutuhan
+              alt="Living room"
+              className="m-auto "
+            />
+          </motion.section>
+          <motion.section
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "linear" }}
+          >
+            <Image
+              src="/LandingPage/NDA_7482.jpg"
+              width={800} // ubah sesuai kebutuhan
+              height={800} // ubah sesuai kebutuhan
+              alt="Living room"
+              className="m-auto "
+            />
           </motion.section>
         </section>
       </section>
