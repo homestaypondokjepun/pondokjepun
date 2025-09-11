@@ -13,10 +13,22 @@ const ButtonChat = () => {
     const [dewasa, setDewasa] = useState("");
     const [anak, setAnak] = useState("");
 
+
+    // Format tanggal biar lebih mudah dibaca
+    const formattedDate = tanggal
+        ? tanggal.toLocaleDateString("id-ID", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+        })
+        : "";
+
+
     const sendWhatsapp = (e) => {
         e.preventDefault();
 
-        const whatsappMessage = ` Halo, saya ${nama},  mau menanyakan ketersediaan homestay untuk :\n Dewasa: ${dewasa}\n Anak-anak: ${anak}\n Pada Tanggal : ${tanggal?.toLocaleDateString()}\n Apakah bisa diinformasikan detail fasilitas dan harganya?`;
+        const whatsappMessage = ` Halo, saya ${nama},  mau menanyakan ketersediaan homestay untuk :\n Dewasa: ${dewasa}\n Anak-anak: ${anak}\n Pada Tanggal : ${formattedDate}\n Apakah bisa diinformasikan detail fasilitas dan harganya?`;
         const url = `https://wa.me/6285732225227?text=${encodeURIComponent(
             whatsappMessage
         )}`;
