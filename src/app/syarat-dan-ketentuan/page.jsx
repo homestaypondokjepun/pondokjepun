@@ -1,5 +1,6 @@
 import BtnKembali from "@/components/syarat-ketentuan/BtnKembali";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export const metadata = {
   title: "Syarat & Ketentuan",
@@ -127,7 +128,15 @@ export default function TermsAndConditions() {
               </li>
             </ol>
 
-            <BtnKembali />
+            <Suspense
+              fallback={
+                <p className="mt-6 text-coklat_tua text-sm">
+                  Loading tombol...
+                </p>
+              }
+            >
+              <BtnKembali />
+            </Suspense>
           </div>
 
           <aside className="w-72 block">
