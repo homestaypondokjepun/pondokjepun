@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+
   return (
     <footer className="bg-coklat_muda pb-10">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -70,7 +74,11 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/syarat-dan-ketentuan"
+                    href={`${
+                      pathname === "/contact"
+                        ? "/syarat-dan-ketentuan?from=contact"
+                        : "/syarat-dan-ketentuan"
+                    }`}
                     className="hover:underline"
                   >
                     Syarat &amp; Ketentuan

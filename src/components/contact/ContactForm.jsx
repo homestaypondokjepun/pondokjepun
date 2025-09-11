@@ -188,7 +188,7 @@ const ContactForm = () => {
               </button>
 
               <Link
-                href={"/syarat-dan-ketentuan"}
+                href={"/syarat-dan-ketentuan?from=contact"}
                 className="text-coklat_tua underline text-sm"
               >
                 Syarat &amp; Ketentuan
