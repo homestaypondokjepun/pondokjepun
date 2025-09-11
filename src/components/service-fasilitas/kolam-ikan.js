@@ -186,7 +186,7 @@ const KolamIkan = () => {
                     <div className="relative aspect-video md:aspect-full md:h-full">
                         {images.map((src, index) => {
                             // convert jpeg, JPG to jpg
-                            const normalizedSrc = src.replace(/\.(jpg|jpeg)$/i, ".jpg");
+                            const normalizedSrc = src.replace(/\.(jpg|jpeg|JPG)$/i, ".jpg");
                             return (
                                 <div
                                     key={index}
