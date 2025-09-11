@@ -184,20 +184,24 @@ const KolamIkan = () => {
                     className="relative  overflow-hidden">
                     {/* Wrapper */}
                     <div className="relative aspect-video md:aspect-full md:h-full">
-                        {images.map((src, index) => (
-                            <div
-                                key={index}
-                                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
-                                    }`}
-                            >
-                                <Image
-                                    src={src}
-                                    alt={`Slide ${index + 1}`}
-                                    fill
-                                    className="object-cover "
-                                />
-                            </div>
-                        ))}
+                        {images.map((src, index) => {
+                            // convert jpeg, JPG to jpg
+                            const normalizedSrc = src.replace(/\.(jpg|jpeg)$/i, ".jpg");
+                            return (
+                                <div
+                                    key={index}
+                                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                                        }`}
+                                >
+                                    <Image
+                                        src={normalizedSrc}
+                                        alt={`Slide ${index + 1}`}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            );
+                        })}
                     </div>
 
                     {/* Indicators */}
