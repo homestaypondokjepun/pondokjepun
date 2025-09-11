@@ -5,7 +5,6 @@ import Link from "next/link";
 const BtnKembali = () => {
   const searchParams = useSearchParams();
   const from = searchParams.get("from");
-
   return (
     <section className="mt-6">
       <Link
