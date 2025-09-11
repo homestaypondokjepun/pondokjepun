@@ -1,3 +1,4 @@
+import BtnKembali from "@/components/syarat-ketentuan/BtnKembali";
 import Link from "next/link";
 
 export const metadata = {
@@ -125,6 +126,8 @@ export default function TermsAndConditions() {
                 </p>
               </li>
             </ol>
+
+            <BtnKembali />
           </div>
 
           <aside className="w-72 block">
