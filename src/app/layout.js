@@ -25,6 +25,14 @@ export const metadata = {
     "guest house Banyuwangi",
     "Pondok Jepun Banyuwangi",
   ],
+  images: [
+    {
+      url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Pondok Jepun Homestay Banyuwangi",
+    },
+  ],
   openGraph: {
     title: "Pondok Jepun",
     description:
