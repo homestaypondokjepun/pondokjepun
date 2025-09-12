@@ -39,7 +39,7 @@ export const metadata = {
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import SyaratKetentuanHead from "@/components/syarat-ketentuan/syarat-ketentuan-head";
+import Header from "@/components/header";
 import SyaratKetentuan from "@/components/syarat-ketentuan/syarat-ketentuan";
 import ButtonChat from "@/components/buttonChat";
 
@@ -47,7 +47,12 @@ export default function TermsAndConditions() {
   return (
     <>
       <Navbar />
-      <SyaratKetentuanHead />
+      <Header
+        bgUrl={"/headerAkomodasiPondok.jpg"}
+        title={"Syarat & Ketentuan"}
+        deskripsi={"Untuk menjaga kenyamanan bersama, kami menetapkan beberapa aturan terkait pemesanan, pembayaran, serta penggunaan fasilitas. Mohon dibaca dan dipahami agar masa inap Anda lebih tenang dan menyenangkan"}
+
+      />
       <SyaratKetentuan />
       <Footer />
       <ButtonChat />

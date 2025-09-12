@@ -15,7 +15,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Header />
+      <Header
+        bgUrl={"/headerLandingPondok.jpg"}
+        title={"Pondok Jepun Homestay"}
+        deskripsi={"Tempat nyaman dan tenang, cocok untuk liburan atau perjalanan bisnis. Lokasi strategis, fasilitas lengkap, dan suasana seperti di rumah"}
+        images={[
+          "/Gallery/gallery (1).jpg",
+          "/Gallery/gallery (2).jpg",
+          "/Gallery/gallery (3).jpg",
+        ]}
+      />
       <Welcome />
       <OurHome />
       <RuangTamu />

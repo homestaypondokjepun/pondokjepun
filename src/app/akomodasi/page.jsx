@@ -4,12 +4,11 @@
 
 
 import Navbar from "@/components/navbar"
+import Header from "@/components/header"
 import Footer from "@/components/footer"
 import ButtonChat from "@/components/buttonChat";
 import ReviewUser from "@/components/reviewUser";
 
-
-import AccomodationHead from "@/components/Accomodation/AccomodationHead";
 import AccomodationPreview from "@/components/Accomodation/AccomodationPreview";
 import AccomodationFasilitas from "@/components/Accomodation/AccomodationFasilitas";
 import AccomodationFasilitasKamar from "@/components/Accomodation/AccomodationFasilitasKamar";
@@ -28,7 +27,7 @@ export const metadata = {
         "hotel Banyuwangi",
     ],
     openGraph: {
-        title: "Akomodasi",
+        title: "Akomodasi Page",
         description:
             "Nikmati akomodasi nyaman di Pondok Jepun Homestay Banyuwangi. Fasilitas lengkap: AC, TV, wifi, dapur bersih, dan ruang tamu luas.",
         url: "https://pondokjepun.vercel.app/accomodation",
@@ -57,11 +56,23 @@ export default function Akomodasi() {
     return (
         <>
             <Navbar />
-            <AccomodationHead />
+            <Header
+                bgUrl={"/headerAkomodasiPondok.jpg"}
+                title={"Akomodasi"}
+                deskripsi={"Kami menyediakan berbagai tipe kamar dengan suasana yang homey dan tenang, cocok untuk istirahat, liburan, maupun perjalanan bisnis"}
+                images={[
+                    "/Gallery/gallery (67).jpg",
+                    "/Gallery/gallery (68).jpg",
+                    "/Gallery/gallery (64).jpg",
+                ]}
+            />
+            {/* <AccomodationHead /> */}
             <AccomodationPreview />
-            <AccomodationPrice />
+            <AccomodationPrice
+                bgUrl={"/headerAkomodasiPondok.jpg"} />
             <AccomodationFasilitasKamar />
-            <AccomodationFasilitas />
+            <AccomodationFasilitas
+                bgUrl={"/headerAkomodasiPondok.jpg"} />
             <ReviewUser />
             <Footer />
             <ButtonChat />

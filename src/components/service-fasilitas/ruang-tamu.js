@@ -28,7 +28,7 @@ const RuangTamu = () => {
   };
 
   return (
-    <section className="p-1 md:p-4 flex items-center overflow-hidden">
+    <section className="p-1 md:p-4 flex items-center overflow-hidden bg-coklat_muda">
       {/* Tampilan Desktop */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Right Section (Text) */}

@@ -39,7 +39,7 @@ export const metadata = {
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import CaraPesanHead from "@/components/cara-pemesanan/cara-pemesanan-head";
+import Header from "@/components/header";
 import CaraPesan from "@/components/cara-pemesanan/cara-pemesanan";
 import ButtonChat from "@/components/buttonChat";
 
@@ -48,7 +48,17 @@ export default function CaraPemesanan() {
   return (
     <>
       <Navbar />
-      <CaraPesanHead />
+      <Header
+        bgUrl={"/headerAkomodasiPondok.jpg"}
+        title={"Cara Pemesanan"}
+        deskripsi={"Temukan langkah mudah untuk memesan penginapan terbaik Anda bersama kami. Nikmati proses pemesanan yang praktis, cepat, dan aman, sehingga liburan atau perjalanan Anda menjadi lebih nyaman dan menyenangkan sejak awal"}
+        images={[
+          "/Gallery/gallery (45).jpg",
+          "/Gallery/gallery (46).jpg",
+          "/Gallery/gallery (20).jpg",
+          "/Gallery/gallery (61).jpg",
+        ]}
+      />
       <CaraPesan />
       <Footer />
       <ButtonChat />
