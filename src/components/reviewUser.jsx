@@ -186,6 +186,7 @@ const ReviewUser = () => {
           width="100%"
           height="100%"
           loading="lazy"
+          title="Review Customer"
         />
       </section>
     </section>
