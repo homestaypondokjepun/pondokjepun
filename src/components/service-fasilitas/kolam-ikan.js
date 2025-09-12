@@ -7,12 +7,14 @@ import Link from "next/link";
 import { motion } from "motion/react";
 
 const images = [
-  "/KolamIkan/IMG_0414.JPG",
-  "/KolamIkan/IMG_0412.JPG",
-  "/KolamIkan/IMG_0417.JPG",
-  "/KolamIkan/IMG_0418.JPG",
-  "/KolamIkan/IMG_0427.JPG",
-  "/KolamIkan/IMG_0435.JPG",
+
+  "/Gallery/gallery (63).jpg",
+  "/Gallery/gallery (62).jpg",
+  "/Gallery/gallery (59).jpg",
+  "/Gallery/gallery (60).jpg",
+  "/Gallery/gallery (61).jpg",
+  "/Gallery/gallery (64).jpg",
+
 ];
 const KolamIkan = () => {
   const [current, setCurrent] = useState(0);
@@ -45,9 +47,8 @@ const KolamIkan = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === current ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <Image
                   src={src}
@@ -65,9 +66,8 @@ const KolamIkan = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -196,9 +196,8 @@ const KolamIkan = () => {
               return (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                    index === current ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                    }`}
                 >
                   <Image
                     src={normalizedSrc}
@@ -217,9 +216,8 @@ const KolamIkan = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
