@@ -4,6 +4,9 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [showHide, setShowHide] = useState(false);
@@ -30,7 +33,10 @@ export default function Navbar() {
           <section className="gap-5 hidden lg:flex ">
             <section className="flex items-center gap-2 ">
               <section className="border border-coklat w-10 h-10 rounded-full flex justify-center items-center hover:animate-contact duration-75">
-                <i className="fa-solid fa-location-dot text-xl text-coklat"></i>
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="text-xl text-coklat"
+                />
               </section>
               <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
                 <p>Q85W+R2J, Sumberrejo, Kec. Banyuwangi,</p>
@@ -43,7 +49,10 @@ export default function Navbar() {
                 aria-label="Kirim email ke Pondok Jepun"
                 className="border border-coklat w-10 h-10 rounded-full flex justify-center items-center hover:animate-contact duration-75"
               >
-                <i className="fa-solid fa-envelope text-xl text-coklat"></i>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  className="text-xl text-coklat"
+                />
               </a>
               <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
                 <p>Email Kami</p>
