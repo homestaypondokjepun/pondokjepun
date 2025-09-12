@@ -1,63 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const VideoHero = () => {
-  const playerRef = useRef(null);
+  const [isPlayerVisible, setIsPlayerVisible] = useState(false);
+  const videoId = "JfFG_ltRv-k";
 
-  useEffect(() => {
-    // Cek apakah API sudah ada
-    if (!window.YT) {
-      // Load YouTube API script
-      const tag = document.createElement("script");
-      tag.src = "https://www.youtube.com/iframe_api";
-      document.body.appendChild(tag);
-
-      window.onYouTubeIframeAPIReady = () => {
-        createPlayer();
-      };
-    } else {
-      // API sudah ada, langsung buat player
-      createPlayer();
-    }
-
-    function createPlayer() {
-      // Pastikan player belum dibuat
-      if (!playerRef.current) {
-        playerRef.current = new window.YT.Player("ytplayer", {
-          videoId: "JfFG_ltRv-k",
-          playerVars: {
-            autoplay: 0,
-            mute: 0,
-            modestbranding: 1,
-            rel: 0,
-            controls: 1,
-          },
-          events: {
-            onStateChange: (event) => {
-              if (event.data === window.YT.PlayerState.PLAYING) {
-                event.target.unMute();
-                event.target.setVolume(100);
-                event.target.setPlaybackQuality("highres");
-              }
-              if (event.data === window.YT.PlayerState.ENDED) {
-                event.target.playVideo();
-              }
-            },
-          },
-        });
-      }
-    }
-
-    // Cleanup saat unmount
-    return () => {
-      if (playerRef.current) {
-        playerRef.current.destroy();
-        playerRef.current = null;
-      }
-    };
-  }, []);
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&rel=0&modestbranding=1&controls=1&loop=1&playlist=${videoId}`;
 
   return (
     <motion.section
@@ -67,9 +18,9 @@ const VideoHero = () => {
       className="p-5 flex justify-center"
     >
       <section className="w-full max-w-6xl rounded-md overflow-hidden shadow-2xl border border-gray-100">
-        {/* Teks di atas video */}
+        {/* Teks */}
         <div className="text-center p-6">
-          <h1 className="teramo font-bold text-[24px] md:text-[32px]  text-coklat_tua">
+          <h1 className="teramo font-bold text-[24px] md:text-[32px] text-coklat_tua">
             Guest House Pondok Jepun 🌿
           </h1>
           <p className="mt-4 max-w-3xl font-semibold mx-auto text-sm md:text-base leading-relaxed text-coklat_tua">
@@ -81,12 +32,43 @@ const VideoHero = () => {
           </p>
         </div>
 
-        {/* Video pakai API */}
-        <div className="relative w-full aspect-video">
-          <div
-            id="ytplayer"
-            className="absolute top-0 left-0 w-full h-full"
-          ></div>
+        {/* Video */}
+        <div
+          className="relative w-full aspect-video cursor-pointer"
+          onClick={() => setIsPlayerVisible(true)}
+        >
+          {isPlayerVisible ? (
+            <iframe
+              src={embedUrl}
+              title="Video Pondok Jepun"
+              className="absolute top-0 left-0 w-full h-full"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              loading="lazy"
+              frameBorder="0"
+            />
+          ) : (
+            <div className="absolute top-0 left-0 w-full h-full">
+              <Image
+                src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
+                alt="Thumbnail Video Pondok Jepun"
+                fill
+                sizes="(max-width: 768px) 100vw, 700px"
+                className="object-cover"
+                priority={false}
+              />
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-16 w-16 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </motion.section>
