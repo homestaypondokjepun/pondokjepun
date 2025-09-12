@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const Welcome = () => {
   return (
@@ -78,7 +80,7 @@ const Welcome = () => {
               <section className="flex items-center gap-3 w-fit">
                 <section className="w-7 bg-coklat_tua h-7 text-white rounded-full flex justify-center items-center">
                   <section className="w-12 h-12 flex items-center justify-center">
-                    <i className="fa-solid fa-check text-sm"></i>
+                    <FontAwesomeIcon icon={faCheck} className="text-sm" />
                   </section>
                 </section>
                 <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
@@ -88,7 +90,7 @@ const Welcome = () => {
               <section className="flex items-center gap-3 w-fit ">
                 <section className="w-7 bg-coklat_tua h-7 text-white rounded-full flex justify-center items-center">
                   <section className="w-12 h-12 flex items-center justify-center ">
-                    <i className="fa-solid fa-check text-sm"></i>
+                    <FontAwesomeIcon icon={faCheck} className="text-sm" />
                   </section>
                 </section>
                 <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
