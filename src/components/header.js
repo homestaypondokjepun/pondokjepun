@@ -8,13 +8,13 @@ const Header = () => {
   return (
     <section className="h-[40vh] md:h-[55vh] relative">
       <Image
-        src="/fotoheader.jpg"
+        src="/fotoheaderjepun.jpg"
         fill
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
         priority
       />
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0" />
 
       <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-46">
         <motion.h1
