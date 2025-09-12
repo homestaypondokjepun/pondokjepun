@@ -29,7 +29,7 @@ const ButtonChat = () => {
         e.preventDefault();
 
         const whatsappMessage = ` Halo, saya ${nama},  mau menanyakan ketersediaan homestay untuk :\n Dewasa: ${dewasa}\n Anak-anak: ${anak}\n Pada Tanggal : ${formattedDate}\n Apakah bisa diinformasikan detail fasilitas dan harganya?`;
-        const url = `https://wa.me/6285732225227?text=${encodeURIComponent(
+        const url = `https://wa.me/6282132487131?text=${encodeURIComponent(
             whatsappMessage
         )}`;
         window.open(url, "_blank");
@@ -75,7 +75,8 @@ const ButtonChat = () => {
                         {/* Form */}
                         <form onSubmit={sendWhatsapp} className="space-y-4 p-1 rounded-md">
                             {/* Date Picker */}
-                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Pilih Tanggal Booking</label>
+                            <label htmlFor="email" className="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Pilih Tanggal Booking</label>
+
                             <DatePicker
                                 selected={tanggal}
                                 onChange={(date) => setTanggal(date)}
@@ -86,7 +87,8 @@ const ButtonChat = () => {
                             />
 
                             {/* Nama */}
-                            <label for="email" class="block teramo text-coklat_tua mb-2 text-sm font-medium text-left ml-3 ">Nama Lengkap</label>
+                            <label htmlFor="email" className="block teramo text-coklat_tua mb-2 text-sm font-medium text-left ml-3 ">Nama Lengkap</label>
+
                             <input
                                 type="text"
                                 placeholder="Nama Lengkap"
@@ -97,7 +99,8 @@ const ButtonChat = () => {
                             />
 
                             {/* Jumlah Dewasa */}
-                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Orang Dewasa</label>
+                            <label htmlFor="email" className="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Orang Dewasa</label>
+
                             <input
                                 type="number"
                                 placeholder="Jumlah Dewasa"
@@ -109,7 +112,8 @@ const ButtonChat = () => {
                             />
 
                             {/* Jumlah Anak */}
-                            <label for="email" class="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Anak - anak</label>
+                            <label htmlFor="email" className="block teramo mb-2 text-sm font-medium text-left ml-3 text-coklat_tua ">Jumlah Anak - anak</label>
+
                             <input
                                 type="number"
                                 placeholder="Jumlah Anak-anak"
@@ -119,6 +123,9 @@ const ButtonChat = () => {
                                 onChange={(e) => setAnak(e.target.value)}
                                 required
                             />
+                            <label className="block text-xs text-gray-500 mt-2">
+                                NB: Mohon isi 0 jika tidak ada anak
+                            </label>
 
                             {/* Tombol Submit */}
                             <button
