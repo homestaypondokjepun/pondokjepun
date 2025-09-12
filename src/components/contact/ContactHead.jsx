@@ -6,6 +6,7 @@ const ContactHead = () => {
       <Image
         src="/Contact/NDA_7444.jpg"
         fill
+        priority
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
       />

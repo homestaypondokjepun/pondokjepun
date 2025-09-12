@@ -12,6 +12,7 @@ const Header = () => {
         fill
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
+        priority
       />
       <div className="absolute inset-0 bg-black/50" />
 
