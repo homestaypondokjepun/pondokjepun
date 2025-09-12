@@ -6,7 +6,12 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <section className="h-[40vh] md:h-[55vh] relative">
+    <motion.section
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="h-[40vh] md:h-[55vh] relative"
+    >
       <Image
         src="/fotoheaderjepun.jpg"
         fill
@@ -22,7 +27,7 @@ const Header = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-white   drop-shadow-lg"
+          className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-coklat_tua drop-shadow-lg"
         >
           Pondok Jepun
         </motion.h1>
@@ -30,14 +35,14 @@ const Header = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="teramo mb-8 md:text-[18px] text-[14px] text-white sm:px-16 lg:px-48 drop-shadow-md "
+          className="teramo mb-8 md:text-[18px] text-[14px] sm:px-16 lg:px-48 drop-shadow-md text-coklat_tua"
         >
           Tempat nyaman dan tenang, cocok untuk liburan atau perjalanan bisnis.
           Lokasi strategis, fasilitas lengkap, dan suasana seperti di rumah
           sendiri.
         </motion.p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
