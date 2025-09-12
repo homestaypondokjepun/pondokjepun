@@ -6,6 +6,7 @@ const AccomodationHead = () => {
       <Image
         src="/fotoheader.jpg"
         fill
+        priority
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
       />

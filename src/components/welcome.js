@@ -18,6 +18,7 @@ const Welcome = () => {
               src="/LandingPage/NDA_7417.jpg"
               alt="Living room"
               fill
+              priority
               className="object-cover object-center rounded-md"
             />
 
@@ -32,12 +33,11 @@ const Welcome = () => {
                 width={300}
                 height={500}
                 alt="Living room"
+                priority
                 className="h-[18rem] object-cover rounded-l-md rounded-br-md"
               />
             </motion.section>
           </motion.section>
-
-
         </section>
 
         <section className="w-full mb-3 md:mb-0  bg-coklat_muda px-5 pr-5 py-10 h-fit  overflow-hidden">
@@ -118,9 +118,7 @@ const Welcome = () => {
                 />
               </svg>
             </Link>
-
           </motion.section>
-
         </section>
         <section className="  flex flex-wrap gap-5 md:hidden overflow-hidden">
           <motion.section
@@ -133,6 +131,7 @@ const Welcome = () => {
               width={800} // ubah sesuai kebutuhan
               height={800} // ubah sesuai kebutuhan
               alt="Living room"
+              priority
               className="m-auto "
             />
           </motion.section>
@@ -147,6 +146,7 @@ const Welcome = () => {
               height={800} // ubah sesuai kebutuhan
               alt="Living room"
               className="m-auto "
+              priority
             />
           </motion.section>
         </section>
