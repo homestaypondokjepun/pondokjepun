@@ -13,7 +13,7 @@ const Welcome = () => {
           <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, ease: "linear" }}
+            transition={{ duration: 1, ease: "easeOut" }}
             className="relative hidden md:block w-full h-[40rem] -top-10 "
           >
             <Image
@@ -42,7 +42,12 @@ const Welcome = () => {
           </motion.section>
         </section>
 
-        <section className="w-full mb-3 md:mb-0  bg-coklat_muda px-5 pr-5 py-10 h-fit  overflow-hidden">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="w-full mb-3 md:mb-0  bg-coklat_muda px-5 pr-5 py-10 h-fit  overflow-hidden"
+        >
           <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -121,7 +126,7 @@ const Welcome = () => {
               </svg>
             </Link>
           </motion.section>
-        </section>
+        </motion.section>
         <section className="  flex flex-wrap gap-5 md:hidden overflow-hidden">
           <motion.section
             initial={{ opacity: 0 }}
