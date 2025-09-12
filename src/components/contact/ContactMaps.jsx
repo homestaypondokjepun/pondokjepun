@@ -22,6 +22,7 @@ export default function GoogleMapsEmbed() {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
+            title="Map Pondok Jepun"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
