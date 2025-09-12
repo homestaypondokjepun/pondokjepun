@@ -192,7 +192,7 @@ const KolamIkan = () => {
             {images.map((src, index) => {
               // convert jpeg, JPG to jpg
               const normalizedSrc = src.replace(/\.(jpg|jpeg|JPG)$/i, ".jpg");
-              console.log(normalizedSrc);
+
               return (
                 <div
                   key={index}
