@@ -3,10 +3,11 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function AccomodationPrice() {
+export default function AccomodationPrice({ bgUrl }) {
   return (
-    <>
-      <div className="w-full max-w-5xl mx-auto mb-5  shadow-lg border border-gray-200 p-5 rounded-md">
+    <section className="w-full bg-cover bg-center p-2"
+      style={{ backgroundImage: `url(${bgUrl})` }}>
+      <div className="w-full max-w-5xl mx-auto  shadow-lg border bg-white border-gray-200 p-5 rounded-md">
         {/* Header */}
         <motion.section
           initial={{ opacity: 0 }}
@@ -14,7 +15,7 @@ export default function AccomodationPrice() {
           transition={{ duration: 0.8, ease: "linear" }}
           className=" text-center "
         >
-          <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] pb-5">
+          <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[28px] pb-5">
             Homestay Pondok Jepun
           </h2>
         </motion.section>
@@ -30,7 +31,6 @@ export default function AccomodationPrice() {
               <section className="p-2 teramo md:text-[16px] font-semibold text-[14px] text-coklat_tua">
                 <ul className=" list-disc list-inside ">
                   <li className="p-1">Akses penuh ke seluruh kamar tidur</li>
-                  <li className="p-1">Dapur & Ruang Makan</li>
                   <li className="p-1">Dapur & Ruang Makan</li>
                   <li className="p-1">Area Santai</li>
                 </ul>
@@ -59,6 +59,6 @@ export default function AccomodationPrice() {
           </article>
         </section>
       </div>
-    </>
+    </section>
   );
 }

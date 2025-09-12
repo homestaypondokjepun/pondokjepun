@@ -35,10 +35,10 @@ export default function Navbar() {
               <section className="border border-coklat w-10 h-10 rounded-full flex justify-center items-center hover:animate-contact duration-75">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="text-xl text-coklat"
+                  className="text-xl text-coklat_tua"
                 />
               </section>
-              <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
+              <section className="text-coklat_tua text-sm flex flex-col gap-1 font-bold">
                 <p>Q85W+R2J, Sumberrejo, Kec. Banyuwangi,</p>
                 <p> Kabupaten Banyuwangi, Jawa Timur</p>
               </section>
@@ -51,10 +51,10 @@ export default function Navbar() {
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-xl text-coklat"
+                  className="text-xl text-coklat_tua"
                 />
               </a>
-              <section className="text-coklat text-sm flex flex-col gap-1 font-bold">
+              <section className="text-coklat_tua text-sm flex flex-col gap-1 font-bold">
                 <p>Email Kami</p>
                 <p>pondokjepun25@gmail.com</p>
               </section>
@@ -72,7 +72,7 @@ export default function Navbar() {
           </section>
 
           <section className="items-center gap-10 hidden sm:flex ">
-            <p className="text-2xl text-coklat font-bold">+62 821-3248-7131</p>
+            <p className="text-2xl text-coklat_tua font-bold">+62 821-3248-7131</p>
             <a
               href="https://wa.me/6282132487131"
               target="_blank"
@@ -85,11 +85,10 @@ export default function Navbar() {
       </section>
 
       <motion.nav
-        className={`z-50 w-full ${
-          scrolled
-            ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
-            : "relative bg-white md:bg-coklat_muda"
-        }`}
+        className={`z-50 w-full ${scrolled
+          ? "fixed top-0 left-0 bg-white md:bg-coklat_muda shadow-md"
+          : "relative bg-white md:bg-coklat_muda"
+          }`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center ">
           <Link
@@ -103,14 +102,14 @@ export default function Navbar() {
               height={60}
               width={30}
             />
-            <span className="nicolas self-center text-2xl font-bold whitespace-nowrap text-coklat">
+            <span className="nicolas self-center text-2xl font-bold whitespace-nowrap text-coklat_tua">
               Pondok Jepun
             </span>
           </Link>
           <button
             onClick={() => setShowHide(!showHide)}
             type="button"
-            className="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-coklat hover:text-coklat_muda rounded-lg md:hidden hover:bg-coklat_tua focus:outline-none  "
+            className="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-coklat_tua hover:text-coklat_muda rounded-lg md:hidden hover:bg-coklat_tua focus:outline-none  "
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -146,11 +145,10 @@ export default function Navbar() {
                   aria-current="page"
                 >
                   <p
-                    className={`text-coklat border-b-2  ${
-                      pathname === "/"
-                        ? "  border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2  ${pathname === "/"
+                      ? "  border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Home
                   </p>
@@ -162,11 +160,10 @@ export default function Navbar() {
                   className=" block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2  ${
-                      pathname === "/akomodasi"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2  ${pathname === "/akomodasi"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Akomodasi
                   </p>
@@ -178,11 +175,10 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2 ${
-                      pathname === "/service-fasilitas"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2 ${pathname === "/service-fasilitas"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Fasilitas
                   </p>
@@ -194,11 +190,10 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2  ${
-                      pathname === "/pricing"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2  ${pathname === "/pricing"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Gallery
                   </p>
@@ -210,11 +205,10 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2  ${
-                      pathname === "/cara-pemesanan"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2  ${pathname === "/cara-pemesanan"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Cara Pemesanan
                   </p>
@@ -226,11 +220,10 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2 ${
-                      pathname === "/contact"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2 ${pathname === "/contact"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Contact
                   </p>
@@ -242,11 +235,10 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat border-b-2 ${
-                      pathname === "/Kost/LandingPage"
-                        ? "border-b-coklat"
-                        : "border-b-coklat_muda hover:border-b-coklat"
-                    } `}
+                    className={`text-coklat_tua border-b-2 ${pathname === "/Kost/LandingPage"
+                      ? "border-b-coklat"
+                      : "border-b-coklat_muda hover:border-b-coklat"
+                      } `}
                   >
                     Kost Arka Dewata
                   </p>

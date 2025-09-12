@@ -36,7 +36,7 @@ export default function AccomodationPreview() {
           transition={{ duration: 0.8, ease: "linear" }}
           className=" text-center p-5"
         >
-          <h2 className="teramo font-semibold text-coklat_tua text-[20px] md:text-[26px] pb-4">
+          <h2 className="teramo font-semibold text-coklat_tua text-[24px] md:text-[28px] pb-4">
             Foto Homestay Pondok Jepun
           </h2>
           <hr className="m-auto w-[55%] rounded-2xl bg-coklat_tua text-coklat_tua " />

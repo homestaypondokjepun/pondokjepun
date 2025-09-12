@@ -2,9 +2,8 @@
 
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import Header from "@/components/header"
 
-
-import ContactHead from "@/components/contact/ContactHead";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactMaps from "@/components/contact/ContactMaps";
 import ButtonChat from "@/components/buttonChat";
@@ -52,7 +51,12 @@ export default function Kontak() {
   return (
     <>
       <Navbar />
-      <ContactHead />
+      <Header
+        bgUrl={"/headerAkomodasiPondok.jpg"}
+        title={"Contact Page"}
+        deskripsi={"Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan ragu untuk menghubungi kami. Tim kami siap membantu memberikan informasi terbaik agar pengalaman menginap Anda lebih nyaman"}
+
+      />
       <ContactForm />
       <ContactMaps />
       <Footer />

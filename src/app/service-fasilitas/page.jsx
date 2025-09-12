@@ -57,9 +57,19 @@ export default function Service_Fasilitas() {
     <>
 
       <Navbar />
-      <Header />
-      <RuangTamu />
+      <Header
+        bgUrl={"/headerAkomodasiPondok.jpg"}
+        title={"Fasilitas Page"}
+        deskripsi={"Homestay Pondok Jepun menawarkan fasilitas lengkap mulai dari kamar yang nyaman dengan AC, Wi-Fi gratis, kamar mandi pribadi, hingga area parkir luas. Tersedia juga dapur bersama dan ruang santai yang bisa digunakan untuk berkumpul bersama keluarga maupun teman"}
+        images={[
+          "/Gallery/gallery (45).jpg",
+          "/Gallery/gallery (46).jpg",
+          "/Gallery/gallery (20).jpg",
+          "/Gallery/gallery (61).jpg",
+        ]}
+      />
       <MejaMakan />
+      <RuangTamu />
       <RuangKaraoke />
       <KolamIkan />
       <ReviewUser />
