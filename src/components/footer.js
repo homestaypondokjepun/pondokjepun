@@ -2,6 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -99,7 +102,8 @@ const Footer = () => {
               target="_blank"
               className="text-coklat_tua hover:text-coklat_tua"
             >
-              <i className="fa-brands fa-instagram text-xl"></i>
+              <FontAwesomeIcon icon={faInstagram} className="text-xl" />
+
               <span className="sr-only">Instagram page</span>
             </a>
 
@@ -108,7 +112,7 @@ const Footer = () => {
               target="_blank"
               className="text-coklat_tua hover:text-coklat_tua"
             >
-              <i className="fa-brands fa-whatsapp text-xl"></i>
+              <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />
               <span className="sr-only">Whatsapp page</span>
             </a>
           </div>
