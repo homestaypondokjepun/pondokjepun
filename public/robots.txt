@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.pondokjepun.com
+
+# Sitemaps
+Sitemap: https://www.pondokjepun.com/sitemap.xml
