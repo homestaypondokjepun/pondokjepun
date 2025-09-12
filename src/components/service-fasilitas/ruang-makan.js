@@ -7,11 +7,11 @@ import Link from "next/link";
 import { motion } from "motion/react";
 
 const images = [
-  "/RuangMakan/NDA_7437.jpg",
-  "/RuangMakan/NDA_7446.jpg",
-  "/RuangMakan/NDA_7447.jpg",
-  "/RuangMakan/NDA_7448.jpg",
-  "/RuangMakan/NDA_7476.jpg",
+  "/Gallery/gallery (45).jpg",
+  "/Gallery/gallery (36).jpg",
+  "/Gallery/gallery (37).jpg",
+  "/Gallery/gallery (38).jpg",
+  "/Gallery/gallery (15).jpg",
 ];
 const RuangMakan = () => {
   const [current, setCurrent] = useState(0);

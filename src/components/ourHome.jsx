@@ -5,17 +5,17 @@ import { motion } from "motion/react";
 import Link from "next/link";
 
 const images1 = [
-  "/KamarDouble/NDA_7483.jpg",
-  "/KamarDouble/NDA_7453.jpg",
-  "/KamarDouble/NDA_7457.jpg",
-  "/KamarDouble/NDA_7481.jpg",
+  "/Gallery/gallery (12).jpg",
+  "/Gallery/gallery (5).jpg",
+  "/Gallery/gallery (6).jpg",
+  "/Gallery/gallery (7).jpg",
 ];
 
 const images2 = [
-  "/KamarSingle/NDA_9195.jpg",
-  "/KamarSingle/NDA_9197.jpg",
-  "/KamarSingle/NDA_9202.jpg",
-  "/KamarSingle/NDA_9203.jpg",
+  "/Gallery/gallery (54).jpg",
+  "/Gallery/gallery (55).jpg",
+  "/Gallery/gallery (56).jpg",
+  "/Gallery/gallery (57).jpg",
 ];
 
 const OurHome = () => {

@@ -6,10 +6,10 @@ import { useState } from "react";
 import { motion } from "motion/react";
 
 const images = [
-  "/RuangKaraoke/NDA_7470.jpg",
-  "/RuangKaraoke/NDA_7465.jpg",
-  "/RuangKaraoke/NDA_7468.jpg",
-  "/RuangKaraoke/NDA_7463.jpg",
+  "/Gallery/gallery (20).jpg",
+  "/Gallery/gallery (18).jpg",
+  "/Gallery/gallery (24).jpg",
+  "/Gallery/gallery (28).jpg",
 ];
 
 const RuangKaraoke = () => {

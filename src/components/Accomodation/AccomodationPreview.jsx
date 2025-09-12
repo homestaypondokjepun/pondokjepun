@@ -11,9 +11,10 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 const images = [
-  "/Accomodation/NDA_9204.jpg",
-  "/Accomodation/NDA_9210.jpg",
-  "/Accomodation/NDA_9222.jpg",
+  "/Gallery/gallery (67).jpg",
+  "/Gallery/gallery (66).jpg",
+  "/Gallery/gallery (65).jpg",
+
   "/Gallery/gallery (39).jpg",
   "/Gallery/gallery (42).jpg",
   "/Gallery/gallery (41).jpg",
