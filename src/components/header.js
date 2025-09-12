@@ -13,6 +13,7 @@ const Header = () => {
         alt="Living room"
         className="m-auto bg-cover bg-center object-cover  "
         priority
+        fetchPriority="high"
       />
       <div className="absolute inset-0" />
 
