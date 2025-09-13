@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Pondok Jepun",
+  title:
+    "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
   description:
     "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
   keywords: [
@@ -36,7 +37,8 @@ export const metadata = {
     },
   ],
   openGraph: {
-    title: "Pondok Jepun",
+    title:
+      "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
     description:
       "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
     url: "https://pondokjepun.vercel.app",
@@ -54,7 +56,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pondok Jepun Homestay Banyuwangi - Penginapan Nyaman & Murah",
+    title:
+      "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
     description:
       "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
     images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
