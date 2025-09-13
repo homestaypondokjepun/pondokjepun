@@ -1,9 +1,6 @@
-
-
-import Header from "@/components/header"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-
+import Header from "@/components/header";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 import RuangTamu from "@/components/service-fasilitas/ruang-tamu";
 import MejaMakan from "@/components/service-fasilitas/ruang-makan";
@@ -52,15 +49,15 @@ export const metadata = {
 };
 
 export default function Service_Fasilitas() {
-
   return (
     <>
-
       <Navbar />
       <Header
         bgUrl={"/headerAkomodasiPondok.jpg"}
         title={"Fasilitas Page"}
-        deskripsi={"Homestay Pondok Jepun menawarkan fasilitas lengkap mulai dari kamar yang nyaman dengan AC, Wi-Fi gratis, kamar mandi pribadi, hingga area parkir luas. Tersedia juga dapur bersama dan ruang santai yang bisa digunakan untuk berkumpul bersama keluarga maupun teman"}
+        deskripsi={
+          "Homestay Pondok Jepun menawarkan fasilitas lengkap mulai dari kamar yang nyaman dengan AC, Wi-Fi gratis, kamar mandi pribadi, hingga area parkir luas. Tersedia juga dapur bersama dan ruang santai yang bisa digunakan untuk berkumpul bersama keluarga maupun teman"
+        }
         images={[
           "/Gallery/gallery (45).jpg",
           "/Gallery/gallery (46).jpg",
@@ -75,8 +72,6 @@ export default function Service_Fasilitas() {
       <ReviewUser />
       <Footer />
       <ButtonChat />
-
     </>
   );
-
 }
