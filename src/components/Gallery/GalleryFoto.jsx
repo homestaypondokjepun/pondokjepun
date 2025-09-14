@@ -89,6 +89,7 @@ const GalleryFoto = () => {
               height={400}
               className="w-full h-full object-cover rounded-md"
               placeholder="blur"
+              sizes="(max-width: 768px) 100vw, 404px"
               blurDataURL="/placeholder.jpg" // bisa bikin 1x1 px base64 juga
             />
           </div>
