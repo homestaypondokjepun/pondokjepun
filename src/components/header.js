@@ -48,7 +48,6 @@
 
 // export default Header;
 
-
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -60,28 +59,28 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-
 export default function Header({
   bgUrl,
   title,
   deskripsi,
   subtitle,
   buttonText,
-  images
+  images,
 }) {
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="w-full bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgUrl})` }}>
+      style={{ backgroundImage: `url(${bgUrl})` }}
+    >
       <div className="max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12  ">
-
         {/* Kiri - Teks */}
         <div className="space-y-6 md:max-w-full max-w-[80%] mx-auto  ">
-          <h3 className="text-lg font-medium teramo text-coklat_tua">{subtitle}</h3>
+          <h3 className="text-lg font-medium teramo text-coklat_tua">
+            {subtitle}
+          </h3>
           <h1 className="text-4xl md:text-5xl text-coklat_tua font-extrabold teramo">
             {title}
           </h1>
@@ -94,8 +93,6 @@ export default function Header({
               {buttonText} →
             </button>
           )}
-
-
         </div>
 
         {/* Kanan - Carousel */}
@@ -140,7 +137,6 @@ export default function Header({
             </Swiper>
           )}
         </div>
-
       </div>
     </motion.section>
   );
