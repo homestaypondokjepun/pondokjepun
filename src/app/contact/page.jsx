@@ -1,8 +1,6 @@
-
-
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import Header from "@/components/header"
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 import ContactForm from "@/components/contact/ContactForm";
 import ContactMaps from "@/components/contact/ContactMaps";
@@ -27,7 +25,7 @@ export const metadata = {
     siteName: "Pondok Jepun",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/Contact/NDA_7444.jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Pondok Jepun",
@@ -41,28 +39,25 @@ export const metadata = {
     title: "Kontak",
     description:
       "Reservasi kamar dan informasi homestay di Banyuwangi, hubungi Pondok Jepun via WhatsApp atau telepon.",
-    images: ["https://pondokjepun.vercel.app/Contact/NDA_7444.jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
 };
 
 export default function Kontak() {
-
-
   return (
     <>
       <Navbar />
       <Header
         bgUrl={"/headerAkomodasiPondok.jpg"}
         title={"Contact Page"}
-        deskripsi={"Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan ragu untuk menghubungi kami. Tim kami siap membantu memberikan informasi terbaik agar pengalaman menginap Anda lebih nyaman"}
-
+        deskripsi={
+          "Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan ragu untuk menghubungi kami. Tim kami siap membantu memberikan informasi terbaik agar pengalaman menginap Anda lebih nyaman"
+        }
       />
       <ContactForm />
       <ContactMaps />
       <Footer />
       <ButtonChat />
-
     </>
   );
-
 }

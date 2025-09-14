@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Pondok Jepun Homestay Banyuwangi",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Pondok Jepun Homestay Banyuwangi",
@@ -33,7 +33,7 @@ export const metadata = {
     title: "Kebijakan Privasi",
     description:
       "Baca kebijakan privasi Pondok Jepun Homestay Banyuwangi. Cara kami mengelola data tamu, melindungi privasi, dan hak-hak Anda sebagai tamu.",
-    images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
 };
 
