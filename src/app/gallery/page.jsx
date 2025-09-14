@@ -1,10 +1,6 @@
-
-
-import Navbar from "@/components/navbar"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
-
-
+import Navbar from "@/components/navbar";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 import GalleryFoto from "@/components/Gallery/GalleryFoto";
 import ButtonChat from "@/components/buttonChat";
@@ -46,7 +42,6 @@ export const metadata = {
   },
 };
 
-
 export default function Gallery() {
   return (
     <>
@@ -54,7 +49,9 @@ export default function Gallery() {
       <Header
         bgUrl={"/headerAkomodasiPondok.jpg"}
         title={"Gallery Page"}
-        deskripsi={"Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan ragu untuk menghubungi kami. Tim kami siap membantu memberikan informasi terbaik agar pengalaman menginap Anda lebih nyaman"}
+        deskripsi={
+          "Punya pertanyaan tentang kamar, fasilitas, atau ketersediaan? Jangan ragu untuk menghubungi kami. Tim kami siap membantu memberikan informasi terbaik agar pengalaman menginap Anda lebih nyaman"
+        }
         images={[
           "/Gallery/gallery (45).jpg",
           "/Gallery/gallery (46).jpg",
