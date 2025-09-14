@@ -72,12 +72,22 @@ export default function Header({
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="w-full bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgUrl})` }}
+      className="relative w-full bg-center"
     >
-      <div className="max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12  ">
+      {/* Background pakai Next/Image */}
+      <Image
+        src={bgUrl}
+        alt="Background"
+        fill
+        priority
+        fetchPriority="high"
+        className="object-cover object-center -z-10"
+        sizes="100vw"
+      />
+
+      <div className="max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12 relative z-10">
         {/* Kiri - Teks */}
-        <div className="space-y-6 md:max-w-full max-w-[80%] mx-auto  ">
+        <div className="space-y-6 md:max-w-full max-w-[80%] mx-auto">
           <h3 className="text-lg font-medium teramo text-coklat_tua">
             {subtitle}
           </h3>
@@ -87,6 +97,7 @@ export default function Header({
           <p className="text-coklat_tua leading-relaxed font-medium">
             {deskripsi}
           </p>
+
           {/* Tombol hanya muncul kalau props ada */}
           {buttonText && (
             <button className="inline-flex items-center bg-coklat_tua text-white font-medium px-5 py-3 rounded-full shadow-md hover:bg-coklat_muda hover:shadow-lg hover:scale-105 hover:duration-300 hover:ease-in hover:text-coklat_tua cursor cursor-pointer transition">
@@ -96,8 +107,7 @@ export default function Header({
         </div>
 
         {/* Kanan - Carousel */}
-
-        <div className="relative  md:h-[280px] lg:h-[320px]  ">
+        <div className="relative md:h-[280px] lg:h-[320px]">
           {images && (
             <Swiper
               effect={"coverflow"}
@@ -122,14 +132,15 @@ export default function Header({
               {images.map((src, index) => (
                 <SwiperSlide
                   key={index}
-                  className="w-[250px] md:w-[350px] lg:w-[400px] "
+                  className="w-[250px] md:w-[350px] lg:w-[400px]"
                 >
-                  <div className="relative  h-[220px] md:h-[280px] lg:h-[320px] overflow-hidden shadow-lg">
+                  <div className="relative h-[220px] md:h-[280px] lg:h-[320px] overflow-hidden shadow-lg">
                     <Image
                       src={src}
                       alt={`Slide ${index + 1}`}
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 400px"
                     />
                   </div>
                 </SwiperSlide>
