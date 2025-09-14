@@ -10,11 +10,10 @@ const images = [
   "/Gallery/gallery (6).jpg",
   "/Gallery/gallery (7).jpg",
   "/Gallery/gallery (8).jpg",
-
   "/Gallery/gallery (10).jpg",
   "/Gallery/gallery (11).jpg",
   "/Gallery/gallery (12).jpg",
-  "/Gallery/gallery (13).jpg",
+  // "/Gallery/gallery (13).jpg",
   "/Gallery/gallery (14).jpg",
   "/Gallery/gallery (15).jpg",
   "/Gallery/gallery (16).jpg",
@@ -22,11 +21,11 @@ const images = [
   "/Gallery/gallery (18).jpg",
   "/Gallery/gallery (19).jpg",
   "/Gallery/gallery (20).jpg",
-  "/Gallery/gallery (21).jpg",
+  // "/Gallery/gallery (21).jpg",
   "/Gallery/gallery (22).jpg",
   "/Gallery/gallery (23).jpg",
   "/Gallery/gallery (24).jpg",
-  "/Gallery/gallery (25).jpg",
+  // "/Gallery/gallery (25).jpg",
   "/Gallery/gallery (26).jpg",
   "/Gallery/gallery (27).jpg",
   "/Gallery/gallery (28).jpg",
@@ -45,7 +44,7 @@ const images = [
   "/Gallery/gallery (41).jpg",
   "/Gallery/gallery (42).jpg",
   "/Gallery/gallery (43).jpg",
-  "/Gallery/gallery (44).jpg",
+  // "/Gallery/gallery (44).jpg",
   "/Gallery/gallery (45).jpg",
   "/Gallery/gallery (46).jpg",
   "/Gallery/gallery (47).jpg",
@@ -79,8 +78,8 @@ const GalleryFoto = () => {
       <div className="grid grid-cols-1 p-2 md:p-0 md:grid-cols-3 gap-6 mt-10 mb-10 w-full max-w-6xl mx-auto">
         {images.map((image, index) => (
           <div
-            key={index}
-            className="flex justify-center items-center cursor-pointer h-80 overflow-hidden "
+            key={index + 1}
+            className="flex justify-center items-center cursor-pointer h-80 overflow-hidden"
             onClick={() => handleOpen(index)}
           >
             <Image
