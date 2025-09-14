@@ -101,7 +101,6 @@ const OurHome = () => {
 
               {/* Prev Button */}
               <button
-                aria-label="Prev button"
                 onClick={prevSlide1}
                 className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -124,7 +123,6 @@ const OurHome = () => {
               </button>
               {/* Next Button */}
               <button
-                aria-label="Next button"
                 onClick={nextSlide1}
                 className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -193,7 +191,6 @@ const OurHome = () => {
               <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
                 {images2.map((_, index) => (
                   <button
-                    aria-label="Prev button"
                     key={index}
                     onClick={() => goToSlide2(index)}
                     className={`w-3 h-3 rounded-full ${
@@ -205,7 +202,6 @@ const OurHome = () => {
 
               {/* Prev Button */}
               <button
-                aria-label="Prev button"
                 onClick={prevSlide2}
                 className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -228,7 +224,6 @@ const OurHome = () => {
               </button>
               {/* Next Button */}
               <button
-                aria-label="Next button"
                 onClick={nextSlide2}
                 className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
