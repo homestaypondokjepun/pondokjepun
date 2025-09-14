@@ -72,8 +72,9 @@ const OurHome = () => {
                 {images1.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current1 ? "opacity-100" : "opacity-0"
-                      }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      index === current1 ? "opacity-100" : "opacity-0"
+                    }`}
                   >
                     <Image
                       src={src}
@@ -91,14 +92,16 @@ const OurHome = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide1(index)}
-                    className={`w-3 h-3 rounded-full ${index === current1 ? "bg-white" : "bg-gray-400"
-                      }`}
+                    className={`w-3 h-3 rounded-full ${
+                      index === current1 ? "bg-white" : "bg-gray-400"
+                    }`}
                   ></button>
                 ))}
               </div>
 
               {/* Prev Button */}
               <button
+                aria-label="Prev button"
                 onClick={prevSlide1}
                 className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -121,6 +124,7 @@ const OurHome = () => {
               </button>
               {/* Next Button */}
               <button
+                aria-label="Next button"
                 onClick={nextSlide1}
                 className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -152,10 +156,11 @@ const OurHome = () => {
                 <hr className="text-coklat_tua mb-3" />
                 <p className=" teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar nyaman dengan tempat tidur double untuk dua orang, cocok
-                  untuk pasangan atau tamu yang ingin beristirahat dengan tenang.
-                  Dilengkapi fasilitas dasar untuk kenyamanan Anda.
+                  untuk pasangan atau tamu yang ingin beristirahat dengan
+                  tenang. Dilengkapi fasilitas dasar untuk kenyamanan Anda.
                 </p>
-              </div></Link>
+              </div>
+            </Link>
           </motion.div>
 
           {/* CARD 2 */}
@@ -170,8 +175,9 @@ const OurHome = () => {
                 {images2.map((src, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current2 ? "opacity-100" : "opacity-0"
-                      }`}
+                    className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                      index === current2 ? "opacity-100" : "opacity-0"
+                    }`}
                   >
                     <Image
                       src={src}
@@ -187,16 +193,19 @@ const OurHome = () => {
               <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
                 {images2.map((_, index) => (
                   <button
+                    aria-label="Prev button"
                     key={index}
                     onClick={() => goToSlide2(index)}
-                    className={`w-3 h-3 rounded-full ${index === current2 ? "bg-white" : "bg-gray-400"
-                      }`}
+                    className={`w-3 h-3 rounded-full ${
+                      index === current2 ? "bg-white" : "bg-gray-400"
+                    }`}
                   ></button>
                 ))}
               </div>
 
               {/* Prev Button */}
               <button
+                aria-label="Prev button"
                 onClick={prevSlide2}
                 className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -219,6 +228,7 @@ const OurHome = () => {
               </button>
               {/* Next Button */}
               <button
+                aria-label="Next button"
                 onClick={nextSlide2}
                 className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
               >
@@ -241,8 +251,7 @@ const OurHome = () => {
               </button>
             </section>
 
-            <Link
-              href={"/akomodasi"}>
+            <Link href={"/akomodasi"}>
               <div className="p-5">
                 <h5 className="mb-2 teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
                   Standard Single Bed
@@ -251,8 +260,8 @@ const OurHome = () => {
                 <p className="mb-3 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar pribadi dengan tempat tidur single yang nyaman, cocok
                   untuk Anda yang menginginkan suasana tenang dan istirahat
-                  berkualitas. Pilihan tepat untuk pengalaman menginap yang simple
-                  dan menyenangkan.
+                  berkualitas. Pilihan tepat untuk pengalaman menginap yang
+                  simple dan menyenangkan.
                 </p>
               </div>
             </Link>
