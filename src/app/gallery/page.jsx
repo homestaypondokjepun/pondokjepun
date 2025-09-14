@@ -1,8 +1,6 @@
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-
-import GalleryHead from "@/components/Gallery/GalleryHead";
 import GalleryFoto from "@/components/Gallery/GalleryFoto";
 
 export const metadata = {
@@ -60,7 +58,6 @@ export default function Gallery() {
         ]}
       />
 
-      <GalleryHead />
       <GalleryFoto />
       <Footer />
     </>
