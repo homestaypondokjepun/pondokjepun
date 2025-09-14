@@ -126,8 +126,8 @@ export default function Header({
               }}
               pagination={{ clickable: true }}
               autoplay={{
-                delay: 3000, // jeda 3 detik
-                disableOnInteraction: false, // tetap jalan meski user interaksi
+                delay: 3000,
+                disableOnInteraction: false,
               }}
               modules={[EffectCoverflow, Pagination, Autoplay]}
               className="mySwiper"
