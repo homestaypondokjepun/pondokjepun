@@ -20,6 +20,7 @@ const Welcome = () => {
               src="/LandingPage/NDA_7417.jpg"
               alt="Living room"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 372px"
               priority
               className="object-cover object-center rounded-md"
             />
@@ -36,6 +37,7 @@ const Welcome = () => {
                 height={500}
                 alt="Living room"
                 priority
+                sizes="(max-width: 768px) 100vw, 300px"
                 className="h-[18rem] object-cover rounded-l-md rounded-br-md"
               />
             </motion.section>
