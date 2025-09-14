@@ -100,7 +100,10 @@ export default function Header({
 
           {/* Tombol hanya muncul kalau props ada */}
           {buttonText && (
-            <button className="inline-flex items-center bg-coklat_tua text-white font-medium px-5 py-3 rounded-full shadow-md hover:bg-coklat_muda hover:shadow-lg hover:scale-105 hover:duration-300 hover:ease-in hover:text-coklat_tua cursor cursor-pointer transition">
+            <button
+              aria-label="Textbutton"
+              className="inline-flex items-center bg-coklat_tua text-white font-medium px-5 py-3 rounded-full shadow-md hover:bg-coklat_muda hover:shadow-lg hover:scale-105 hover:duration-300 hover:ease-in hover:text-coklat_tua cursor cursor-pointer transition"
+            >
               {buttonText} →
             </button>
           )}
