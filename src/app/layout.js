@@ -63,7 +63,7 @@ export const metadata = {
     images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
   },
   icons: {
-    icon: "/logo.ico",
+    icon: "/favicon.ico",
   },
 };
 
