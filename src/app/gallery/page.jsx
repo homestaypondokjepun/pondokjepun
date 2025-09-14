@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Pondok Jepun Homestay Banyuwangi",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/Gallery/gallery%20(16).jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Galeri Pondok Jepun Homestay Banyuwangi",
@@ -36,7 +36,7 @@ export const metadata = {
     title: "Galeri ",
     description:
       "Jelajahi galeri foto homestay Banyuwangi. Lihat suasana, kamar, dan fasilitas Pondok Jepun.",
-    images: ["https://pondokjepun.vercel.app/Gallery/gallery%20(16).jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
 };
 

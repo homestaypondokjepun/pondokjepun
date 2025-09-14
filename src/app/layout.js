@@ -30,7 +30,7 @@ export const metadata = {
   ],
   images: [
     {
-      url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+      url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
       width: 1200,
       height: 630,
       alt: "Pondok Jepun Homestay Banyuwangi",
@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Pondok Jepun Homestay Banyuwangi",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Pondok Jepun Homestay Banyuwangi",
@@ -60,7 +60,7 @@ export const metadata = {
       "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
     description:
       "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
-    images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

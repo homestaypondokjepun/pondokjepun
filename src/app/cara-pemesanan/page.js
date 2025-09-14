@@ -1,5 +1,3 @@
-
-
 export const metadata = {
   title: "Cara Pemesanan",
   description:
@@ -19,7 +17,7 @@ export const metadata = {
     siteName: "Pondok Jepun Homestay",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Cara Pemesanan Pondok Jepun Homestay Banyuwangi",
@@ -33,7 +31,7 @@ export const metadata = {
     title: "Cara Pemesanan",
     description:
       "Pesan kamar di Pondok Jepun Homestay dengan mudah. Proses reservasi cepat, harga terjangkau, dan lokasi strategis di Banyuwangi.",
-    images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
 };
 
@@ -43,7 +41,6 @@ import Header from "@/components/header";
 import CaraPesan from "@/components/cara-pemesanan/cara-pemesanan";
 import ButtonChat from "@/components/buttonChat";
 
-
 export default function CaraPemesanan() {
   return (
     <>
@@ -51,7 +48,9 @@ export default function CaraPemesanan() {
       <Header
         bgUrl={"/headerAkomodasiPondok.jpg"}
         title={"Cara Pemesanan"}
-        deskripsi={"Temukan langkah mudah untuk memesan penginapan terbaik Anda bersama kami. Nikmati proses pemesanan yang praktis, cepat, dan aman, sehingga liburan atau perjalanan Anda menjadi lebih nyaman dan menyenangkan sejak awal"}
+        deskripsi={
+          "Temukan langkah mudah untuk memesan penginapan terbaik Anda bersama kami. Nikmati proses pemesanan yang praktis, cepat, dan aman, sehingga liburan atau perjalanan Anda menjadi lebih nyaman dan menyenangkan sejak awal"
+        }
         images={[
           "/Gallery/gallery (45).jpg",
           "/Gallery/gallery (46).jpg",

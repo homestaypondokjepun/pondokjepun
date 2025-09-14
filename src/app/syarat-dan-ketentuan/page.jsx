@@ -1,5 +1,3 @@
-
-
 export const metadata = {
   title: "Syarat & Ketentuan",
   description:
@@ -19,7 +17,7 @@ export const metadata = {
     siteName: "Pondok Jepun Homestay Banyuwangi",
     images: [
       {
-        url: "https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg",
+        url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         width: 1200,
         height: 630,
         alt: "Pondok Jepun Homestay Banyuwangi",
@@ -33,7 +31,7 @@ export const metadata = {
     title: "Syarat & Ketentuan",
     description:
       "Ketahui syarat & ketentuan menginap di Pondok Jepun Homestay Banyuwangi. Informasi lengkap tentang reservasi, pembayaran, pembatalan, dan aturan fasilitas.",
-    images: ["https://pondokjepun.vercel.app/LandingPage/NDA_7431.jpg"],
+    images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
 };
 
@@ -50,8 +48,9 @@ export default function TermsAndConditions() {
       <Header
         bgUrl={"/headerAkomodasiPondok.jpg"}
         title={"Syarat & Ketentuan"}
-        deskripsi={"Untuk menjaga kenyamanan bersama, kami menetapkan beberapa aturan terkait pemesanan, pembayaran, serta penggunaan fasilitas. Mohon dibaca dan dipahami agar masa inap Anda lebih tenang dan menyenangkan"}
-
+        deskripsi={
+          "Untuk menjaga kenyamanan bersama, kami menetapkan beberapa aturan terkait pemesanan, pembayaran, serta penggunaan fasilitas. Mohon dibaca dan dipahami agar masa inap Anda lebih tenang dan menyenangkan"
+        }
       />
       <SyaratKetentuan />
       <Footer />
