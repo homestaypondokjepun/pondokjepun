@@ -29,7 +29,7 @@ const ContactForm = () => {
           </section>
 
           <section className="p-2 mt-2">
-            <p className="teramo md:text-[16px] text-[16px] text-coklat_tua">
+            <p className="md:text-[16px] text-[16px] text-coklat_tua">
               Kami selalu siap membantu Anda jika ada pertanyaan, permintaan
               khusus, atau informasi lebih lanjut yang Anda butuhkan. Jangan
               ragu untuk menghubungi kami kapan saja — kami akan dengan senang
@@ -39,7 +39,7 @@ const ContactForm = () => {
           </section>
 
           <section className="p-2 mt-4">
-            <p className="teramo md:text-[16px] text-[16px] text-coklat_tua">
+            <p className="md:text-[16px] text-[16px] text-coklat_tua">
               Jl. Brawijaya, Kebalenan, Kec. Banyuwangi, Kabupaten Banyuwangi,
               Jawa Timur 68417
             </p>
