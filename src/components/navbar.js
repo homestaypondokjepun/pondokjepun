@@ -208,7 +208,7 @@ export default function Navbar() {
                 >
                   <p
                     className={`text-coklat_tua border-b-2  ${
-                      pathname === "/pricing"
+                      pathname === "/gallery"
                         ? "border-b-coklat"
                         : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
