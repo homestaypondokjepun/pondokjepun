@@ -10,6 +10,7 @@ import ButtonChat from "@/components/buttonChat";
 import RuangTamuHome from "@/components/home/ruang-tamu-home";
 import RuangMakanHome from "@/components/home/ruang-makan-home";
 import RuangKaraokeHome from "@/components/home/ruang-karaoke-home";
+import KolamIkanHome from "@/components/home/kolam-ikan-home";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <RuangTamuHome />
       <RuangMakanHome />
       <RuangKaraokeHome />
+      <KolamIkanHome />
       <Fasilitas />
       <Video />
       <ReviewUser />

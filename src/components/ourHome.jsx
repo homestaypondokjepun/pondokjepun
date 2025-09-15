@@ -152,7 +152,7 @@ const OurHome = () => {
                 </h5>
 
                 <hr className="text-coklat_tua mb-3" />
-                <p className=" teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar nyaman dengan tempat tidur double untuk dua orang, cocok
                   untuk pasangan atau tamu yang ingin beristirahat dengan
                   tenang. Dilengkapi fasilitas dasar untuk kenyamanan Anda.
@@ -252,7 +252,7 @@ const OurHome = () => {
                   Standard Single Bed
                 </h5>
                 <hr className="text-coklat_tua mb-3" />
-                <p className="mb-3 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                <p className="mb-3 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar pribadi dengan tempat tidur single yang nyaman, cocok
                   untuk Anda yang menginginkan suasana tenang dan istirahat
                   berkualitas. Pilihan tepat untuk pengalaman menginap yang

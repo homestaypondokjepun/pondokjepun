@@ -59,7 +59,7 @@ const Welcome = () => {
             <h2 className=" teramo font-semibold text-coklat_tua text-[24px] md:text-[26px] mb-4">
               Selamat Datang
             </h2>
-            <p className="teramo md:text-[18px] font-semibold text-[16px]  text-coklat_tua  tracking-wider mt-4  ">
+            <p className="md:text-[18px] font-semibold text-[16px]  text-coklat_tua  tracking-wider mt-4  ">
               Tentang Kami
             </p>
           </motion.section>
@@ -69,12 +69,12 @@ const Welcome = () => {
             transition={{ duration: 0.8, ease: "linear" }}
             className="mt-5 "
           >
-            <p className="teramo md:text-[16px] font-semibold text-[14px]   leading-7 text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]   leading-7 text-coklat_tua">
               Pondok Jepun, Nyaman Seperti di Rumah Sendiri Strategis, Tenang,
               dan Dekat ke Semua Destinasi
             </p>
 
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua leading-7 mt-5">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua leading-7 mt-5">
               Nikmati pengalaman menginap yang nyaman dan tenang di Guest House
               Pondok Jepun, sebuah penginapan bergaya homy yang terletak
               strategis di jantung kota Banyuwangi. Dikelilingi oleh pesona alam
@@ -90,7 +90,7 @@ const Welcome = () => {
                     <FontAwesomeIcon icon={faCheck} className="text-sm" />
                   </section>
                 </section>
-                <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Menyuguhkan kamar yang nyaman, bersih, dan menenangkan.
                 </p>
               </section>
@@ -100,7 +100,7 @@ const Welcome = () => {
                     <FontAwesomeIcon icon={faCheck} className="text-sm" />
                   </section>
                 </section>
-                <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                   Kamar utama nyaman dengan AC, TV, dan water heater.
                 </p>
               </section>
