@@ -50,8 +50,8 @@ export default function Header({
 
       <div
         className={`${
-          scrolled ? "mt-[3.2rem]" : "mt-0"
-        } max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12 relative z-10`}
+          scrolled ? "md:mt-[3.2rem]" : "mt-0"
+        } max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12 relative z-10 mt-[4.5rem] md:mt-0`}
       >
         {/* Kiri - Teks */}
         <div className="space-y-6 md:max-w-full max-w-[80%] mx-auto">
