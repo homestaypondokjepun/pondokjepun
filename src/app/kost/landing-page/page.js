@@ -3,8 +3,7 @@ import NavbarKost from "@/components/Kost/Navbar/Navbar";
 import Footer from "@/components/footer";
 import FiturKami from "@/components/Kost/LandingPage/FiturKami";
 import TentangKost from "@/components/Kost/LandingPage/TentangKost";
-
-import ButtonChat from "@/components/buttonChat";
+import ButtonChatKos from "@/components/Kost/buttonChatKos";
 
 export const metadata = {
   title: "Kos Aka Dewata Banyuwangi - Hunian Nyaman & Strategis",
@@ -63,7 +62,7 @@ export default function Home() {
       <TentangKost />
 
       <Footer />
-      <ButtonChat />
+      <ButtonChatKos />
     </>
   );
 }
