@@ -34,7 +34,7 @@ const RuangKaraoke = () => {
               Ruang Karaoke
             </h1>
 
-            <p className="mt-4 mr-30 teramo text-[14px] md:text-[16px] font-semibold text-coklat_tua">
+            <p className="mt-4 mr-30 text-[14px] md:text-[16px] font-semibold text-coklat_tua">
               Menghadirkan Ruang Karaoke sebagai area hiburan yang nyaman dan
               bersih. Tempat ini cocok untuk berkumpul bersama keluarga maupun
               teman, bernyanyi bersama, atau sekadar menikmati suasana santai
@@ -76,7 +76,7 @@ const RuangKaraoke = () => {
               Ruang Karaoke
             </h1>
 
-            <p className="mt-4 teramo text-[14px] md:text-[16px] font-semibold text-coklat_tua">
+            <p className="mt-4 text-[14px] md:text-[16px] font-semibold text-coklat_tua">
               Menghadirkan Ruang Karaoke sebagai area hiburan yang nyaman dan
               bersih. Tempat ini cocok untuk berkumpul bersama keluarga maupun
               teman, bernyanyi bersama, atau sekadar menikmati suasana santai

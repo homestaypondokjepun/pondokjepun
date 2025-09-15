@@ -65,7 +65,7 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className=" h-15 p-2 mr-12  "
+            className=" h-15 p-2 mr-12"
           >
             <Image
               src="/logo.png"
@@ -103,13 +103,19 @@ export default function Navbar() {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse md:hidden gap-2 "
           >
-            <Image
-              src="/logo.png"
-              className="w-10 me-1"
-              alt="Pondok Jepun Logo"
-              height={60}
-              width={30}
-            />
+            <motion.section
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <Image
+                src="/logo.png"
+                className="w-10 me-1"
+                alt="Pondok Jepun Logo"
+                height={400}
+                width={400}
+              />
+            </motion.section>
             <span className="nicolas self-center text-2xl font-bold whitespace-nowrap text-coklat_tua">
               Pondok Jepun
             </span>

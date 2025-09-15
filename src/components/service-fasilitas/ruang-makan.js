@@ -58,7 +58,7 @@ const RuangMakan = () => {
               Ruang Makan & Dapur
             </h1>
 
-            <p className="mt-4  mr-30 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="mt-4  mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Tempat yang bersih, rapi, dan dilengkapi dengan fasilitas memadai
               untuk Anda menikmati hidangan sekaligus menyiapkan makanan dengan
               nyaman. Dengan suasana homey yang hangat, area ini dirancang agar
@@ -95,7 +95,7 @@ const RuangMakan = () => {
                 Ruang Makan & Dapur
               </h1>
 
-              <p className="mt-4 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+              <p className="mt-4 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Tempat yang bersih, rapi, dan dilengkapi dengan fasilitas
                 memadai untuk Anda menikmati hidangan sekaligus menyiapkan
                 makanan dengan nyaman. Dengan suasana homey yang hangat, area

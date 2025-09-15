@@ -45,12 +45,13 @@ const TentangKost = () => {
                 >
                   Tentang Kost Arka Dewata
                 </h1>
-                <p className="mt-4  md:mr-30 text-center md:text-left  teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore, quam voluptatem quisquam perspiciatis velit ducimus
-                  aspernatur et harum consectetur! Est quia porro optio
-                  consequatur dignissimos voluptate reiciendis nulla placeat
-                  molestias.
+                <p className="mt-4  md:mr-30 text-center md:text-left md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+                  Kos Aka Dewata hadir sebagai pilihan hunian nyaman dengan
+                  lingkungan yang bersih dan tenang. Lokasinya strategis, dekat
+                  dengan fasilitas umum dan transportasi, sehingga memudahkan
+                  aktivitas sehari-hari. Dengan suasana homey dan fasilitas yang
+                  mendukung, kos ini cocok untuk mahasiswa maupun pekerja yang
+                  ingin tinggal lebih praktis dan nyaman.
                 </p>
               </section>
             </section>
