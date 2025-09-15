@@ -292,7 +292,7 @@ const KolamIkanHome = () => {
                 Kolam Ikan
               </h1>
 
-              <p className="mt-4 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+              <p className="mt-4 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Kolam ikan di area penginapan kami dirancang untuk menghadirkan
                 suasana alami dan menenangkan bagi setiap tamu. Anda bisa
                 menikmati momen santai sambil melihat ikan berenang di air

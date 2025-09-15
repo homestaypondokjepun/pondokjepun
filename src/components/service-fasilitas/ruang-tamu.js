@@ -38,7 +38,7 @@ const RuangTamu = () => {
                 Ruang Tamu
               </h1>
 
-              <p className="mt-4 mr-30  teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+              <p className="mt-4 mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Area bersantai yang nyaman, bersih, dan tertata rapi ini menjadi
                 tempat ideal untuk berkumpul bersama keluarga atau teman. Anda
                 bisa berbincang santai, bercanda, atau sekadar menikmati suasana
@@ -85,7 +85,7 @@ const RuangTamu = () => {
                 Ruang Tamu
               </h1>
 
-              <p className="mt-4 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+              <p className="mt-4 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Area bersantai yang nyaman, bersih, dan tertata rapi ini menjadi
                 tempat ideal untuk berkumpul bersama keluarga atau teman. Anda
                 bisa berbincang santai, bercanda, atau sekadar menikmati suasana
