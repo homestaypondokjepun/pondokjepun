@@ -1,55 +1,5 @@
-// "use client";
-
-// import Image from "next/image";
-
-// import { motion } from "motion/react";
-
-// const Header = () => {
-//   return (
-//     <motion.section
-//       initial={{ opacity: 0 }}
-//       whileInView={{ opacity: 1 }}
-//       transition={{ duration: 0.5, ease: "easeOut" }}
-//       className="h-[40vh] md:h-[55vh] relative"
-//     >
-//       <Image
-//         src="/fotoheaderjepun.jpg"
-//         fill
-//         alt="Living room"
-//         className="m-auto bg-cover bg-center object-cover  "
-//         priority
-//         fetchPriority="high"
-//       />
-//       <div className="absolute inset-0" />
-
-//       <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-46">
-//         <motion.h1
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ duration: 2 }}
-//           className="nicolas mb-4 md:text-[52px]  text-[32px] font-extrabold tracking-tight leading-none text-coklat_tua drop-shadow-lg"
-//         >
-//           Pondok Jepun
-//         </motion.h1>
-//         <motion.p
-//           initial={{ opacity: 0 }}
-//           animate={{ opacity: 1 }}
-//           transition={{ duration: 2 }}
-//           className="teramo mb-8 md:text-[18px] text-[14px] sm:px-16 lg:px-48 drop-shadow-md text-coklat_tua"
-//         >
-//           Tempat nyaman dan tenang, cocok untuk liburan atau perjalanan bisnis.
-//           Lokasi strategis, fasilitas lengkap, dan suasana seperti di rumah
-//           sendiri.
-//         </motion.p>
-//       </div>
-//     </motion.section>
-//   );
-// };
-
-// export default Header;
-
 "use client";
-
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
@@ -67,6 +17,19 @@ export default function Header({
   buttonText,
   images,
 }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // ubah threshold sesuai kebutuhan
+    };
+
+    // set initial state (jika user membuka halaman tidak dari top)
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -85,7 +48,11 @@ export default function Header({
         sizes="100vw"
       />
 
-      <div className="max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12 relative z-10">
+      <div
+        className={`${
+          scrolled ? "mt-[3.2rem]" : "mt-0"
+        } max-w-[100%] md:max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-15 items-center px-6 py-12 relative z-10`}
+      >
         {/* Kiri - Teks */}
         <div className="space-y-6 md:max-w-full max-w-[80%] mx-auto">
           <h3 className="text-lg font-medium teramo text-coklat_tua">
