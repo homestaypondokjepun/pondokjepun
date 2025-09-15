@@ -17,7 +17,7 @@ const ReviewUser = () => {
         </motion.section>
         <iframe
           className="h-[300px]"
-          src="https://widgets.sociablekit.com/google-reviews/iframe/25597446"
+          src="https://widgets.sociablekit.com/google-reviews/iframe/25599633"
           frameBorder={0}
           width="100%"
           height="100%"
