@@ -139,7 +139,7 @@ const RuangMakanHome = () => {
               Ruang Makan & Dapur
             </h1>
 
-            <p className="mt-4  mr-30 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="mt-4  mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Tempat yang bersih dan tertata rapi untuk Anda menikmati hidangan
               dan menyiapkan makanan dengan nyaman. Suasana homey yang mendukung
               kebersamaan dan kepraktisan selama menginap.

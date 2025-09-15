@@ -52,7 +52,7 @@ const RuangKaraokeHome = () => {
               Ruang Karaoke
             </h1>
 
-            <p className="mt-4 mr-30 teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="mt-4 mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
               berbincang, atau sekadar menikmati suasana homestay yang hangat.
               Dirancang dengan sentuhan homey agar Anda merasa seperti di rumah

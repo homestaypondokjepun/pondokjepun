@@ -16,7 +16,7 @@ const Fasilitas = () => {
           <h2 className="teramo font-bold text-[24px] md:text-[32px] tracking-wider">
             Fasilitas Unggulan
           </h2>
-          <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua  mt-1">
+          <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua  mt-1">
             Semua Yang Anda Butuhkan Ada di Rumah
           </p>
         </motion.section>
@@ -39,7 +39,7 @@ const Fasilitas = () => {
             <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
               Ruang Tamu
             </p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Ruang tamu nyaman dengan sofa empuk dan nuansa hangat untuk
               bersantai.
             </p>
@@ -57,7 +57,7 @@ const Fasilitas = () => {
             <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
               Meja Makan
             </p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Meja makan bersih dan luas, cocok untuk makan bersama keluarga.
             </p>
           </section>
@@ -74,7 +74,7 @@ const Fasilitas = () => {
             <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
               Ruang Karaoke
             </p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Ruang karaoke lengkap dan nyaman untuk seru-seruan bersama
               keluarga atau teman.
             </p>
@@ -92,7 +92,7 @@ const Fasilitas = () => {
             <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
               Dapur Bersih
             </p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Dapur bersih dan rapi, siap digunakan untuk memasak kebutuhan
               tamu.
             </p>
@@ -110,7 +110,7 @@ const Fasilitas = () => {
             <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
               Spot Foto
             </p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               Tersedia spot foto estetik untuk abadikan momen liburanmu.
             </p>
           </section>
@@ -124,8 +124,10 @@ const Fasilitas = () => {
                 className="m-auto"
               />
             </section>
-            <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">Wifi</p>
-            <p className="teramo md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
+            <p className="teramo font-semibold text-coklat_tua text-[24px] md:text-[26px]">
+              Wifi
+            </p>
+            <p className="md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
               WiFi cepat dan stabil untuk mendukung aktivitas online tamu.
             </p>
           </section>
