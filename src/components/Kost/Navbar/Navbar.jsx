@@ -242,12 +242,12 @@ export default function NavbarKost() {
               </li>
               <li>
                 <Link
-                  href="/Kost/LandingPage"
+                  href="/kost/landing-page"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
                     className={`text-coklat border-b-2 ${
-                      pathname === "/Kost/LandingPage"
+                      pathname === "/kost/landing-page"
                         ? "border-b-coklat"
                         : "border-b-coklat_muda hover:border-b-coklat"
                     } `}
