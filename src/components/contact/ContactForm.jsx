@@ -40,8 +40,8 @@ const ContactForm = () => {
 
           <section className="p-2 mt-4">
             <p className="md:text-[16px] text-[16px] text-coklat_tua">
-              Jl. Brawijaya, Kebalenan, Kec. Banyuwangi, Kabupaten Banyuwangi,
-              Jawa Timur 68417
+              Jl. Cokroningrat, Sumberrejo, Kec. Banyuwangi, Kabupaten
+              Banyuwangi, Jawa Timur 68419
             </p>
           </section>
 
