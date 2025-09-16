@@ -92,7 +92,7 @@ export default function Navbar() {
       </section>
 
       <motion.nav
-        className={`z- fixed z-20 w-full top-0 bg-white md:bg-coklat_muda shadow-md ${
+        className={`fixed z-20 w-full top-0 bg-white md:bg-coklat_muda shadow-md ${
           scrolled ? "" : "md:relative"
         }`}
       >
