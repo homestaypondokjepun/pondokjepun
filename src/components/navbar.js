@@ -92,8 +92,9 @@ export default function Navbar() {
       </section>
 
       <motion.nav
-        className={`z- fixed z-20 w-full top-0 bg-white md:bg-coklat_muda shadow-md ${scrolled ? "" : "md:relative"
-          }`}
+        className={`z- fixed z-20 w-full top-0 bg-white md:bg-coklat_muda shadow-md ${
+          scrolled ? "" : "md:relative"
+        }`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:justify-center ">
           <Link
@@ -156,10 +157,11 @@ export default function Navbar() {
                   aria-current="page"
                 >
                   <p
-                    className={`text-coklat_tua border-b-2  ${pathname === "/"
-                      ? "  border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2  ${
+                      pathname === "/"
+                        ? "  border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Home
                   </p>
@@ -171,10 +173,11 @@ export default function Navbar() {
                   className=" block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2  ${pathname === "/akomodasi"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2  ${
+                      pathname === "/akomodasi"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Akomodasi
                   </p>
@@ -186,10 +189,11 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2 ${pathname === "/service-fasilitas"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2 ${
+                      pathname === "/service-fasilitas"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Fasilitas
                   </p>
@@ -201,10 +205,11 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2  ${pathname === "/gallery"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2  ${
+                      pathname === "/gallery"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Gallery
                   </p>
@@ -216,10 +221,11 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2  ${pathname === "/cara-pemesanan"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2  ${
+                      pathname === "/cara-pemesanan"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Cara Pemesanan
                   </p>
@@ -231,10 +237,11 @@ export default function Navbar() {
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2 ${pathname === "/contact"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2 ${
+                      pathname === "/contact"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Contact
                   </p>
@@ -242,14 +249,15 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/Kost/landing-page"
+                  href="/kost/landing-page"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
-                    className={`text-coklat_tua border-b-2 ${pathname === "/Kost/landing-page"
-                      ? "border-b-coklat"
-                      : "border-b-coklat_muda hover:border-b-coklat"
-                      } `}
+                    className={`text-coklat_tua border-b-2 ${
+                      pathname === "/kost/landing-page"
+                        ? "border-b-coklat"
+                        : "border-b-coklat_muda hover:border-b-coklat"
+                    } `}
                   >
                     Kost Arka Dewata
                   </p>
