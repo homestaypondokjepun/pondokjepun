@@ -4,14 +4,32 @@ import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import FormPemesanan from "./FormPemesanan";
 
+import * as gtag from "../lib/gtag";
+
 const ButtonChat = () => {
   const [showPopup, setShowPopup] = useState(false);
+
+  const handleClick = () => {
+    // Kirim event ke Google Analytics
+    gtag.event({
+      action: "click_booking",
+      category: "Interaksi-Pengguna",
+      label: "Booking Button",
+    });
+
+    // Tampilkan popup form
+    setShowPopup(true);
+  };
+
+  const handleClose = () => {
+    setShowPopup(false);
+  };
 
   return (
     <section className="p-2 text-center fixed z-50 bottom-0 w-full bg-white shadow-lg h-15 content-center">
       <section className="flex justify-center items-center">
         <button
-          onClick={() => setShowPopup(true)}
+          onClick={handleClick}
           className="w-full flex justify-center cursor-pointer items-center h-10 text-white bg-coklat_tua  font-medium rounded-lg text-sm px-5 py-2.5"
         >
           <svg
@@ -28,7 +46,7 @@ const ButtonChat = () => {
       </section>
 
       {/* Popup Form */}
-      {showPopup && <FormPemesanan setShowPopup={setShowPopup} />}
+      {showPopup && <FormPemesanan setShowPopup={handleClose} />}
     </section>
   );
 };

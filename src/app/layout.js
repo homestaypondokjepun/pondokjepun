@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import "../lib/fontawesome";
+import AnalytycsListener from "./analytics-listener";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,19 +15,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:
-    "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
+  metadataBase: new URL("https://pondokjepun.com"),
+  title: {
+    default: "Pondok Jepun Homestay Banyuwangi",
+    template: "%s | Pondok Jepun Homestay Banyuwangi",
+  },
   description:
-    "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
+    "Pondok Jepun Homestay Banyuwangi – penginapan nyaman, strategis, dan terjangkau di pusat kota Banyuwangi. Cocok untuk liburan, keluarga, maupun perjalanan bisnis.",
   keywords: [
-    "Pondok Jepun Homestay",
-    "pondok jepun homestay",
-    "homestay Banyuwangi",
-    "penginapan murah Banyuwangi",
-    "akomodasi Banyuwangi",
-    "hotel Banyuwangi",
-    "guest house Banyuwangi",
-    "Pondok Jepun Banyuwangi",
+    'Pondok Jepun Homestay Banyuwangi',
+    // (brand + lokasi, keyword utama)
+    'Homestay Banyuwangi',
+    // (short - tail populer, persaingan tinggi)
+    'Penginapan murah Banyuwangi',
+    // (user intent harga)
+    'Guest House Banyuwangi',
+    // (alternatif pencarian akomodasi)
+    'Akomodasi strategis di Banyuwangi',
+    // (nilai jual lokasi)
+    'Homestay nyaman di pusat kota Banyuwangi',
+    // (fokus kenyamanan & lokasi)
+    'Homestay keluarga di Banyuwangi',
+    // (target segmen family traveler)
+    'Homestay dekat Kawah Ijen Banyuwangi',
+    // (target wisatawan Ijen)
+
   ],
   images: [
     {
@@ -37,12 +50,13 @@ export const metadata = {
     },
   ],
   openGraph: {
-    title:
-      "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
+    title: "Pondok Jepun Homestay Banyuwangi",
     description:
-      "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
-    url: "https://pondokjepun.vercel.app",
-    siteName: "Pondok Jepun Homestay Banyuwangi",
+      "Nikmati pengalaman menginap nyaman di Pondok Jepun Homestay Banyuwangi. Lokasi strategis, fasilitas lengkap, harga terjangkau.",
+    url: "https://pondokjepun.com",
+    siteName: "Pondok Jepun Homestay",
+    locale: "id_ID",
+    type: "website",
     images: [
       {
         url: "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
@@ -51,21 +65,20 @@ export const metadata = {
         alt: "Pondok Jepun Homestay Banyuwangi",
       },
     ],
-    locale: "id_ID",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Pondok Jepun Banyuwangi Homestay - Pilihan Nyaman untuk Liburan & Bisnis",
+    title: "Pondok Jepun Homestay Banyuwangi",
     description:
-      "Ada yang baru di Banyuwangi! Pondok Jepun Guest House menawarkan pengalaman menginap nyaman di jantung kota Banyuwangi. Nikmati kamar bersih, fasilitas lengkap (AC, TV, water heater, WiFi, dapur, ruang karaoke, dan spot foto keren) dengan harga terjangkau. Lokasi strategis hanya 100 meter dari Satpas Banyuwangi.",
+      "Pondok Jepun Homestay – pilihan akomodasi nyaman dan murah di pusat kota Banyuwangi.",
     images: ["https://pondokjepun.com/LandingPage/NDA_7431.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://pondokjepun.com/favicon.ico",
   },
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
@@ -74,11 +87,30 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <AnalytycsListener />
 
         <Script
           src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
           strategy="lazyOnload"
         />
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-R3ENRZV2L8"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = window.gtag || gtag; // <- penting agar global gtag ada
+            gtag('js', new Date());
+            gtag('config', 'G-R3ENRZV2L8', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+
       </body>
     </html>
   );

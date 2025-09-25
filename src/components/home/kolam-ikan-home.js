@@ -45,9 +45,8 @@ const KolamIkanHome = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === current ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <Image
                   src={src}
@@ -65,9 +64,8 @@ const KolamIkanHome = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -134,12 +132,12 @@ const KolamIkanHome = () => {
             </h5>
 
             <section className=" rounded-lg text-coklat_tua ">
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Guest Home Pondok Jepun
-              </h1>
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              </h2>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Kolam Ikan
-              </h1>
+              </h2>
 
               <p className="mt-4 mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Kolam ikan di area penginapan kami dirancang untuk menghadirkan
@@ -196,9 +194,8 @@ const KolamIkanHome = () => {
               return (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                    index === current ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                    }`}
                 >
                   <Image
                     src={normalizedSrc}
@@ -217,9 +214,8 @@ const KolamIkanHome = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -285,12 +281,12 @@ const KolamIkanHome = () => {
             </h5>
 
             <section className=" rounded-lg text-coklat_tua">
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Guest Home Pondok Jepun
-              </h1>
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              </h2>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Kolam Ikan
-              </h1>
+              </h2>
 
               <p className="mt-4 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Kolam ikan di area penginapan kami dirancang untuk menghadirkan
