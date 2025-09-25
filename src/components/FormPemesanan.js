@@ -11,11 +11,11 @@ const FormPemesanan = ({ setShowPopup }) => {
   // Format tanggal biar lebih mudah dibaca
   const formattedDate = tanggal
     ? tanggal.toLocaleDateString("id-ID", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      })
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
     : "";
 
   const sendWhatsapp = (e) => {
@@ -25,6 +25,20 @@ const FormPemesanan = ({ setShowPopup }) => {
     const url = `https://wa.me/6282132487131?text=${encodeURIComponent(
       whatsappMessage
     )}`;
+
+    // 🔹 Tracking event ke Google Analytics
+    if (typeof window.gtag === "function") {
+      gtag.event({
+        action: "click_whatsapp",
+        category: "Interaksi-Pengguna",
+        label: "WhatsApp Booking",
+        value: 1,
+      });
+      console.log("✅ Event WhatsApp dikirim ke GA");
+    } else {
+      console.warn("⚠️ gtag belum siap, event WhatsApp tidak terkirim");
+    }
+
     window.open(url, "_blank");
   };
 

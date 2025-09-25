@@ -20,9 +20,9 @@ const VideoHero = () => {
       <section className="w-full max-w-6xl rounded-md overflow-hidden shadow-2xl border border-gray-100">
         {/* Teks */}
         <div className="text-center p-6">
-          <h1 className="teramo font-bold text-[24px] md:text-[32px] text-coklat_tua">
+          <h2 className="teramo font-bold text-[24px] md:text-[32px] text-coklat_tua">
             Guest House Pondok Jepun 🌿
-          </h1>
+          </h2>
           <p className="mt-4 max-w-3xl font-semibold mx-auto text-sm md:text-base leading-relaxed text-coklat_tua">
             Ada yang baru di Banyuwangi! Guest House{" "}
             <span className="font-bold">Pondok Jepun</span> hadir di jantung

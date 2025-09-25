@@ -40,19 +40,19 @@ const RuangTamuHome = () => {
           transition={{ duration: 0.8, ease: "linear" }}
         >
           <section className="p-6 flex-col content-center hidden md:block  ">
-            <h5
+            <h2
               className={`nicolas mb-2  text-coklat_tua font-bold text-lg md:text-xl`}
             >
               Fasilitas
-            </h5>
+            </h2>
 
             <section className=" rounded-lg text-coklat_tua ">
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Guest Home Pondok Jepun
-              </h1>
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              </h2>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Ruang Tamu
-              </h1>
+              </h2>
 
               <p className="mt-4 mr-30 md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
@@ -101,9 +101,8 @@ const RuangTamuHome = () => {
             {images.map((src, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  index === current ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                  }`}
               >
                 <Image
                   src={src}
@@ -121,9 +120,8 @@ const RuangTamuHome = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                  index === current ? "bg-white" : "bg-gray-400"
-                }`}
+                className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                  }`}
               ></button>
             ))}
           </div>
@@ -191,9 +189,8 @@ const RuangTamuHome = () => {
               {images.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                    index === current ? "opacity-100" : "opacity-0"
-                  }`}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100" : "opacity-0"
+                    }`}
                 >
                   <Image
                     src={src}
@@ -211,9 +208,8 @@ const RuangTamuHome = () => {
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${
-                    index === current ? "bg-white" : "bg-gray-400"
-                  }`}
+                  className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${index === current ? "bg-white" : "bg-gray-400"
+                    }`}
                 ></button>
               ))}
             </div>
@@ -282,12 +278,12 @@ const RuangTamuHome = () => {
             </h5>
 
             <section className=" rounded-lg text-coklat_tua">
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Guest Home Pondok Jepun
-              </h1>
-              <h1 className={`teramo font-bold text-2xl md:text-3xl`}>
+              </h2>
+              <h2 className={`teramo font-bold text-2xl md:text-3xl`}>
                 Ruang Tamu
-              </h1>
+              </h2>
 
               <p className="mt-4  md:text-[16px] font-semibold text-[14px]  text-coklat_tua">
                 Area bersantai yang nyaman dan bersih, cocok untuk berkumpul,
