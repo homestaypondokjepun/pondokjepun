@@ -4,7 +4,7 @@ export default function Schema() {
         "@context": "https://schema.org",
         "@type": "LodgingBusiness",
         "name": "Pondok Jepun Homestay",
-        "image": "https://pondokjepun.com/images/homestay.jpg",
+        "image": "https://pondokjepun.com/LandingPage/NDA_7431.jpg",
         "logo": "https://pondokjepun.com/favicon.ico",
         "address": {
             "@type": "PostalAddress",
