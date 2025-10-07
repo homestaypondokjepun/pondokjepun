@@ -3,6 +3,7 @@ import "./globals.css";
 import Script from "next/script";
 import "../lib/fontawesome";
 import AnalytycsListener from "./analytics-listener";
+import Schema from '../lib/schema'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,6 +87,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Schema />
         {children}
         <AnalytycsListener />
 
@@ -93,6 +95,24 @@ export default function RootLayout({ children }) {
           src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"
           strategy="lazyOnload"
         />
+
+        {/* ✅ Structured Data: Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Pondok Jepun Guest House",
+              url: "https://pondokjepun.com",
+              logo: "https://pondokjepun.com/favicon.ico",
+              sameAs: [
+                "https://www.instagram.com/pondok_jepun25",
+              ],
+            }),
+          }}
+        />
+
 
         {/* Google Analytics */}
         <Script
