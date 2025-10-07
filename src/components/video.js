@@ -49,6 +49,8 @@ const VideoHero = () => {
             />
           ) : (
             <div className="absolute top-0 left-0 w-full h-full">
+
+
               <Image
                 src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                 alt="Thumbnail Video Pondok Jepun"
@@ -56,6 +58,7 @@ const VideoHero = () => {
                 sizes="(max-width: 768px) 100vw, 700px"
                 className="object-cover"
                 priority={false}
+                unoptimized
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                 <svg
