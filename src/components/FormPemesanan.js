@@ -1,5 +1,6 @@
 import DatePicker from "react-datepicker";
 import { useState } from "react";
+import * as gtag from "../lib/gtag";
 
 const FormPemesanan = ({ setShowPopup }) => {
   // State form
@@ -17,6 +18,7 @@ const FormPemesanan = ({ setShowPopup }) => {
       day: "numeric",
     })
     : "";
+
 
   const sendWhatsapp = (e) => {
     e.preventDefault();
