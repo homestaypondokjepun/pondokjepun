@@ -274,7 +274,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="https://pondokjepun.com/Kost/landing-page"
+                  href="/Kost/landing-page"
                   className="block py-2 px-3 text-coklat rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-coklat_tua md:p-0 "
                 >
                   <p
